@@ -45,8 +45,8 @@ function checkInputs() {
     }
     if (password2Value == '') {
         setErrorFor(password2, 'Mật khẩu không được bỏ trống');
-    } else if (!isPassword2(password2Value)) {
-        setErrorFor(password2, 'Mật Khẩu không hợp lệ')
+    } else if (passwordValue !== password2Value) {
+        setErrorFor(password2, 'Mật Khẩu không đúng')
     } else {
         setSuccessFor(password2);
     }
@@ -72,7 +72,5 @@ function checkInputs() {
     function isPassword(password) {
         return /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password);
     }
-    function isPassword2(password2) {
-        return /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password2);
-    }
+
 }
