@@ -2,7 +2,7 @@
     <head>
     <meta charset="UFT-8">
     <title></title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
 
 
@@ -11,7 +11,7 @@
     <body>
         <div class ="container">
         <div class="header"> 
-        <h2>Đăng Nhập Tài Khoản</h2>
+        <h2>Đăng Kí Tài Khoản</h2>
 
         </div>
        <form class="form" id ="form">
@@ -36,19 +36,27 @@
             <i class="fa-solid fa-circle-info"></i>
             <small>Error message</small>
         </div>
-
-        <button>Đăng Nhập</button>
-        <div class="for">
-        <a href="forgot.html">Quên Mật Khẩu</a>
+        <div class="form-control">
+            <label> Xác Nhận Mật Khẩu</label>
+            <input type="password2" placeholder="Nhập lại mật khẩu" id="password2">
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-info"></i>
+            <small>Error message</small>
         </div>
-        <div class="reg">
+
+
+        <button>Đăng Kí</button>
+        <div class="ta">
+            Bạn đã có tài khoản?
+            <a href="login.html">Đăng Nhập</a>
+        </div>
 
         
-        <a  href="register.html">Đăng Kí Tài Khoản</a>
-        </div>
+        
+      
 
        </form> 
     </div>
-    <script src="js/al.js"></script>
+    <script src="js/register.js"></script>
     </body>
 </html>
