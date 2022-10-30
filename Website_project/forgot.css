@@ -1,0 +1,67 @@
+body {
+ 
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', Courier;
+    justify-content: center;
+    margin: 0;
+}
+#form {
+    
+    width: 600px;
+    border:1px solid #b6b6b6;
+    box-shadow: 0px 1px 0px 0px #b6b6b6;
+    height: 250px;
+    padding:0px;
+    border-radius: 5px;
+
+   
+}
+#form .title {
+    color: #7fad39;
+    font-size: 27px;
+    font-weight: 600;
+
+     height: 60px;
+     line-height: 60px;
+     border-bottom: 1px solid #b6b6b6 ;
+    padding-left: 22px;
+  
+}
+#form .form-label {
+    height: 45px;
+    color: #7fad39;
+    font-size: 20px;
+    line-height: 45px;
+    padding-left: 22px;
+    
+    
+
+}
+#form .form-control {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+
+}
+#form .mb-3 {
+    height: 120px;
+    border-bottom: 1px solid #b6b6b6;
+}
+#form .byli {
+    border: none;
+
+    background-color:  #7fad39;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+   border-radius: 4px;
+   margin-left: 22px;
+}
+
+    
+
+
+
