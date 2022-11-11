@@ -1,54 +1,70 @@
 <html>
-    <head>
+
+<head>
     <meta charset="UFT-8">
     <title></title>
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
 
+</head>
 
-    </head>
-
-    <body>
-        <div class ="container">
-        <div class="header"> 
-        <h2>Đăng Nhập Tài Khoản</h2>
-
+<body>
+    <header>
+        <div class="container header_top">
+            <div class="top_left">
+                <img src="./img/logo.png" alt="logo" srcset="">
+                <h1 class="header_title">Đăng nhập</h1>
+            </div>
+            <div class="top_right">
+                <a href="#">Bạn cần giúp đỡ?</a>
+            </div>
         </div>
-       <form class="form" id ="form">
-        <div class="form-control ">
-            <label>Họ Và Tên</label>
-            <input type="username" placeholder="Tên tài khoản" id="username">
-            <i class="fa-solid fa-circle-check"></i>
-            <i class="fa-solid fa-circle-info"></i>
-            <small>Error message</small>
-        </div>
-        <div class="form-control">
-            <label>Email</label>
-            <input type="text" placeholder="Email" id="email">
-            <i class="fa-solid fa-circle-check"></i>
-            <i class="fa-solid fa-circle-info"></i>
-            <small>Error message</small>
-        </div>
-        <div class="form-control">
-            <label>Mật Khẩu</label>
-            <input type="password" placeholder="Tối thiểu 8 kí tự, ít nhất 1 chữ cái và 1 số" id="password">
-            <i class="fa-solid fa-circle-check"></i>
-            <i class="fa-solid fa-circle-info"></i>
-            <small>Error message</small>
-        </div>
+    </header>
+    <div class="ig" id="ig">
+        <div class="container_content">
+            <div class="header">
+                <h2>Đăng Nhập Tài Khoản</h2>
 
-        <button>Đăng Nhập</button>
-        <div class="for">
-        <a href="forgot.html">Quên Mật Khẩu</a>
-        </div>
-        <div class="reg">
+            </div>
+            <form class="form" id="form">
+                <div class="form-control ">
+                    <label>Họ Và Tên</label>
+                    <input type="username" placeholder="Tên tài khoản" id="username">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="text" placeholder="Email" id="email">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label>Mật Khẩu</label>
+                    <input type="password" placeholder="Tối thiểu 8 kí tự, ít nhất 1 chữ cái và 1 số" id="password">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <small>Error message</small>
+                </div>
 
-        
-        <a  href="register.html">Đăng Kí Tài Khoản</a>
-        </div>
+                <button>Đăng Nhập</button>
+                <div class="for">
+                    <a href="">Quên Mật Khẩu</a>
+                </div>
+                <div class="reg">
 
-       </form> 
+
+                    <a href="">Đăng Kí Tài Khoản</a>
+                </div>
+
+
+            </form>
+        </div>
     </div>
     <script src="js/al.js"></script>
-    </body>
+</body>
+
 </html>
