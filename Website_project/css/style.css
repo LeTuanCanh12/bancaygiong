@@ -1023,11 +1023,15 @@ ol {
 .latest-product__item__pic {
 	float: left;
 	margin-right: 26px;
+
 }
 
 .latest-product__item__pic img {
-	height: 110px;
-	width: 110px;
+
+	height: 120px;
+	width:  120px;
+	object-fit: fill;
+
 }
 
 .latest-product__item__text {
@@ -2647,6 +2651,7 @@ ol {
 	background: #F3F6FA;
 	padding-top: 70px;
 	padding-bottom: 0;
+	height: 500px;
 }
 
 .footer__about {
@@ -2673,7 +2678,7 @@ ol {
 	overflow: hidden;
 }
 
-.footer__widget h6 {
+.footer__widget h5 {
 	color: #1c1c1c;
 	font-weight: 700;
 	margin-bottom: 10px;
