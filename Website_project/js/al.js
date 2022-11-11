@@ -1,5 +1,5 @@
 const form = document.getElementById('form');
-const username = document.getElementById('username');
+
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 
@@ -9,18 +9,10 @@ form.addEventListener('submit', (e) => {
     checkInputs();
 });
 function checkInputs() {
-    const usernameValue = username.value.trim();
+    
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
-    if (usernameValue == '') {
-        //error
-        //add error
-        setErrorFor(username, 'Tên người dùng không được bỏ trống');
-
-    } else {
-        setSuccessFor(username);
-
-    }
+   
     if (emailValue == '') {
         setErrorFor(email, 'Email không được bỏ trống');
 
