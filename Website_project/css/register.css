@@ -12,7 +12,7 @@ body {
 
     background-size: cover;
     height: 100%;
-    /* width: 100%; */
+     width: 96%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,8 @@ header .header_top {
 
 .header_title {
     padding-left: 24px;
-    font-size: 24px;
+    margin-top: 42px;
+    font-size: 22px;
 }
 
 .top_right {
@@ -71,7 +72,9 @@ header .header_top {
     width: 400px;
     max-width: 100%;
     overflow: hidden;
-   
+
+    zoom: 0.8;
+    margin-top: 90px;
   
 }
 .header {
