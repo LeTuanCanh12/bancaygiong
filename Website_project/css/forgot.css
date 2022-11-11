@@ -38,7 +38,8 @@ header .header_top {
 
 .header_title {
     padding-left: 24px;
-    font-size: 24px;
+    margin-top: 42px;
+    font-size: 22px;
 }
 
 .top_right {
@@ -52,6 +53,7 @@ header .header_top {
     font-size: 18px;
 }
 
+
 #form {
     background-color: #fff;
     width: 600px;
@@ -60,6 +62,7 @@ header .header_top {
     height: 250px;
     padding:0px;
     border-radius: 5px;
+    zoom: 0.88;
 
    
 }
@@ -80,6 +83,8 @@ header .header_top {
     font-size: 20px;
     line-height: 45px;
     padding-left: 22px;
+
+
     
     
 
