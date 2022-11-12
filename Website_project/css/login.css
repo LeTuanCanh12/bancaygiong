@@ -5,7 +5,14 @@ html {
     -webkit-tap-highlight-color: transparent;
 }
 
+
+
+
+
 body {
+
+    
+  
     background-color: white;
     background-image: url(../img/ba.png);
     background-position: center;
@@ -21,7 +28,12 @@ body {
     font-family: Courier "Courier New";
     position: relative;
 
+    
+
 }
+
+
+/* Header */
 
 
 header .header_top {
@@ -69,7 +81,7 @@ header .header_top {
     background-color: white;
     z-index: 10;
     margin-top: 90px;
-    zoom: 0.88;
+    zoom: 0.8;
 
 
 }
@@ -81,6 +93,9 @@ header .header_top {
     width: 400px;
     max-width: 100%;
     overflow: hidden;
+    margin: 70px auto;
+    transform: translateX(-200px);
+
 }
 
 .header {
@@ -208,203 +223,5 @@ header .header_top {
     font-size: 17px;
     text-decoration: none;
 }
-.footer {
-	background: #F3F6FA;
-	padding-top: 70px;
-	padding-bottom: 0;
-	height: 500px;
-}
 
-.footer__about {
-	margin-bottom: 30px;
-}
-
-.footer__about ul li {
-	font-size: 16px;
-	color: #1c1c1c;
-	line-height: 36px;
-	list-style: none;
-}
-
-.footer__about__logo {
-	margin-bottom: 15px;
-}
-
-.footer__about__logo a {
-	display: inline-block;
-}
-
-.footer__widget {
-	margin-bottom: 30px;
-	overflow: hidden;
-}
-
-.footer__widget h5 {
-	color: #1c1c1c;
-	font-weight: 700;
-	margin-bottom: 10px;
-}
-
-.footer__widget ul {
-	width: 50%;
-	float: left;
-}
-
-.footer__widget ul li {
-	list-style: none;
-}
-
-.footer__widget ul li a {
-	color: #1c1c1c;
-	font-size: 14px;
-	line-height: 32px;
-}
-
-.footer__widget p {
-	font-size: 14px;
-	color: #1c1c1c;
-	margin-bottom: 30px;
-}
-
-.footer__widget form {
-	position: relative;
-	margin-bottom: 30px;
-}
-
-.footer__widget form input {
-	width: 100%;
-	font-size: 16px;
-	padding-left: 20px;
-	color: #1c1c1c;
-	height: 46px;
-	border: 1px solid #ededed;
-}
-
-.footer__widget form input::placeholder {
-	color: #1c1c1c;
-}
-
-.footer__widget form button {
-	position: absolute;
-	right: 0;
-	top: 0;
-	padding: 0 26px;
-	height: 100%;
-}
-
-.footer__widget .footer__widget__social a {
-	display: inline-block;
-	height: 41px;
-	width: 41px;
-	font-size: 16px;
-	color: #404040;
-	border: 1px solid #ededed;
-	border-radius: 50%;
-	line-height: 38px;
-	text-align: center;
-	background: #ffffff;
-	-webkit-transition: all, 0.3s;
-	-moz-transition: all, 0.3s;
-	-ms-transition: all, 0.3s;
-	-o-transition: all, 0.3s;
-	transition: all, 0.3s;
-	margin-right: 10px;
-}
-
-.footer__widget .footer__widget__social a:last-child {
-	margin-right: 0;
-}
-
-.footer__widget .footer__widget__social a:hover {
-	background: #7fad39;
-	color: #ffffff;
-	border-color: #ffffff;
-}
-
-.footer__copyright {
-	border-top: 1px solid #ebebeb;
-	padding: 15px 0;
-	overflow: hidden;
-	margin-top: 20px;
-}
-
-.footer__copyright__text {
-	font-size: 14px;
-	color: #1c1c1c;
-	float: left;
-	line-height: 25px;
-}
-
-.footer__copyright__payment {
-	float: right;
-}
-
-
-
-.map {
-	height: 500px;
-	position: relative;
-}
-
-.map iframe {
-	width: 100%;
-}
-
-.map .map-inside {
-	position: absolute;
-	left: 50%;
-	top: 160px;
-	-webkit-transform: translateX(-175px);
-	-ms-transform: translateX(-175px);
-	transform: translateX(-175px);
-}
-
-.map .map-inside i {
-	font-size: 48px;
-	color: #7fad39;
-	position: absolute;
-	bottom: -75px;
-	left: 50%;
-	-webkit-transform: translateX(-18px);
-	-ms-transform: translateX(-18px);
-	transform: translateX(-18px);
-}
-
-.map .map-inside .inside-widget {
-	width: 350px;
-	background: #ffffff;
-	text-align: center;
-	padding: 23px 0;
-	position: relative;
-	z-index: 1;
-	-webkit-box-shadow: 0 0 20px 5px rgba(12, 7, 26, 0.15);
-	box-shadow: 0 0 20px 5px rgba(12, 7, 26, 0.15);
-}
-
-.map .map-inside .inside-widget:after {
-	position: absolute;
-	left: 50%;
-	bottom: -30px;
-	-webkit-transform: translateX(-6px);
-	-ms-transform: translateX(-6px);
-	transform: translateX(-6px);
-	border: 12px solid transparent;
-	border-top: 30px solid #ffffff;
-	content: "";
-	z-index: -1;
-}
-
-.map .map-inside .inside-widget h4 {
-	font-size: 22px;
-	font-weight: 700;
-	color: #1c1c1c;
-	margin-bottom: 4px;
-}
-
-.map .map-inside .inside-widget ul li {
-	list-style: none;
-	font-size: 16px;
-	color: #666666;
-	line-height: 26px;
-}
 
