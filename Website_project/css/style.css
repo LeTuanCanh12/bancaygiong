@@ -149,6 +149,11 @@ ol {
 	background-size: cover;
 	background-position: top center;
 }
+.set-bg img{
+	height: 300px;
+	width: 380px;
+	object-fit: cover;
+}
 
 .spad {
 	padding-top: 100px;
@@ -641,7 +646,8 @@ ol {
 	content: "3";
 	font-family: "ElegantIcons";
 	font-size: 18px;
-	color: #ffffff;
+	color: white;
+
 }
 
 .hero__categories ul {
@@ -1953,6 +1959,8 @@ ol {
 .shoping__cart__table table tbody tr td.shoping__cart__item img {
 	display: inline-block;
 	margin-right: 25px;
+	width: 100px;
+	height: 100px;
 }
 
 .shoping__cart__table table tbody tr td.shoping__cart__item h5 {
@@ -2957,6 +2965,7 @@ ol {
 	}
 	.hero__categories ul {
 		padding-left: 20px;
+
 	}
 	.latest-product__slider.owl-carousel .owl-nav {
 		right: 0;
