@@ -14,18 +14,13 @@ body {
      font-family: Courier "Courier New";
 }
 
-.title {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 14px;
-    color: #7fad39;
-    font-weight: 600;
-}
+
 
 .content {
     width: 100%;
     overflow: hidden;
     padding-bottom: 36px;
+    margin-top: 20px;
     
 }
 
