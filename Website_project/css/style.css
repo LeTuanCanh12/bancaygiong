@@ -1768,6 +1768,21 @@ ol {
 	margin-right: -2px;
 	color: #ffA200;
 }
+.product__details__rating i {
+
+	color: #ffA200;
+}
+
+.shoping__cart__total i{
+	margin-right: 4px;
+	margin-left: 4px;
+	zoom: 1.2;
+	color: black;
+}
+.shoping__cart__item__close input{
+	margin-top: 5px;
+zoom: 1.2;
+}
 
 .product__details__text .product__details__rating span {
 	color: #dd2222;
