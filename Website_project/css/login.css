@@ -81,7 +81,7 @@ header .header_top {
     background-color: white;
     z-index: 10;
     margin-top: 90px;
-    zoom: 0.8;
+    zoom: 0.85;
 
 
 }
@@ -93,8 +93,8 @@ header .header_top {
     width: 400px;
     max-width: 100%;
     overflow: hidden;
-    margin: 70px auto;
-    transform: translateX(-200px);
+    /*margin: 70px auto;*/
+    /*transform: translateX(-200px);*/
 
 }
 

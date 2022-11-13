@@ -72,8 +72,7 @@ header .header_top {
     width: 400px;
     max-width: 100%;
     overflow: hidden;
-
-    zoom: 0.88;
+    zoom: 0.85;
     margin-top: 90px;
   
 }
