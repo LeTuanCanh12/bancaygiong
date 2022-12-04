@@ -1063,10 +1063,9 @@ ol {
 }
 
 .latest-product__item__pic img {
-
 	height: 120px;
-	width:  120px;
-	object-fit: fill;
+	width: 120px;
+	object-fit: cover;
 
 }
 
