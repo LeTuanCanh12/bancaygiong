@@ -45,82 +45,12 @@
 	</div>
 
 	<!-- Humberger Begin -->
-	
+
 	<!-- Humberger End -->
 
 	<!-- Header Section Begin -->
-	<header class="header">
-	<div class="header__top">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-md-6">
-					<div class="hero__search__phone">
-						<div class="hero__search__phone__icon">
-							<i class="fa fa-phone"></i>
-						</div>
-						<div class="hero__search__phone__text">
-							<h5>+84 888 888 888</h5>
-							<span>Hỗ trợ 24/7 qua đường dây nóng</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6">
-					<div class="header__top__right">
 
-						<div class="header__top__right__auth">
-							<a href="register.html"><i class="fa fa-user-plus"></i> Đăng
-								ký</a>
-						</div>
-						<div class="header__top__right__auth">
-							<a href="login.html"><i class="fa fa-user"></i> Đăng nhập</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="header__logo">
-					<a href="./index.html"><img src="img/logo.png" alt=""></a>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<nav class="header__menu">
-				<ul>
-					<li><a href="./index.html">Trang Chủ</a></li>
-					<li class="active"><a href="./shop-grid.html">Sản Phẩm</a></li>
-					<li><a href="#">Phân Loại</a>
-						<ul class="header__menu__dropdown">
-							<li><a href="./cay-an-qua.html">Cây ăn quả</a></li>
-							<li><a href="./cay-cong-nghiep.html">Cây công nghiệp</a></li>
-							<li><a href="./cay-lay-go.html">Cây lấy gỗ</a></li>
-						</ul></li>
-					<li><a href="./contact.html">Liên hệ</a></li>
-					<!--                            <li><a href="./contact.html">Contact</a></li>-->
-				</ul>
-				</nav>
-			</div>
-			<div class="col-lg-3">
-				<div class="header__cart">
-					<ul>
-						<li><a href="./favourite.html"><i class="fa fa-heart"></i>
-								<span>1</span></a></li>
-						<li><a href="./cart.html"><i class="fa fa-shopping-bag"></i>
-								<span>3</span></a></li>
-					</ul>
-					<div class="header__cart__price">
-						item: <span>0.00</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="humberger__open">
-			<i class="fa fa-bars"></i>
-		</div>
-	</div>
-	</header>
+	<%@ include file="/common/header.jsp"%>
 	<!-- Hero Section End -->
 
 	<!-- Breadcrumb Section Begin -->
@@ -172,11 +102,8 @@
 													3,4 <i class="fa fa-star" style="color: #ffA200"></i>
 												</p>
 												<div class="product__item__price">
-	
-													${o.discount_price()}
 
-
-													<span>${o.price }</span>
+													${o.discount_price()} <span>${o.price }</span>
 												</div>
 											</div>
 										</a>
@@ -185,126 +112,11 @@
 								</div>
 							</c:forEach>
 
-							<div class="col-lg-4">
-								<div class="product__discount__item">
-									<div class="product__discount__item__pic set-bg"
-										data-setbg="img/product/doihat.png">
-										<div class="product__discount__percent">-19%</div>
-										<ul class="product__item__pic__hover">
-											<li><a href="#"><i class="fa fa-heart"></i></a></li>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
-									</div>
-									<a href="./infor-product.html">
-										<div class="product__discount__item__text">
-											<h5>Cây Dổi Hạt</h5>
-											<p>
-												3,8 <i class="fa fa-star" style="color: #ffA200"></i>
-											</p>
-											<div class="product__item__price">
-												13.000đ <span>16.000đ</span>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="col-lg-4">
-								<div class="product__discount__item">
-									<div class="product__discount__item__pic set-bg"
-										data-setbg="img/product/banglangtim.png">
-										<div class="product__discount__percent">-26%</div>
-										<ul class="product__item__pic__hover">
-											<li><a href="#"><i class="fa fa-heart"></i></a></li>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
-									</div>
-									<a href="./infor-product.html">
-										<div class="product__discount__item__text">
-											<h5>Bằng Lăng Tím</h5>
-											<p>
-												3,1 <i class="fa fa-star" style="color: #ffA200"></i>
-											</p>
-											<div class="product__item__price">
-												60.000đ <span>82.000đ</span>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="col-lg-4">
-								<div class="product__discount__item">
-									<div class="product__discount__item__pic set-bg"
-										data-setbg="img/product/coc-thai.png">
-										<div class="product__discount__percent">-20%</div>
-										<ul class="product__item__pic__hover">
-											<li><a href="#"><i class="fa fa-heart"></i></a></li>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
-									</div>
-									<a href="./infor-product.html">
-										<div class="product__discount__item__text">
 
-											<h5>Cóc Thái</h5>
-											<p>
-												3,4 <i class="fa fa-star" style="color: #ffA200"></i>
-											</p>
 
-											<div class="product__item__price">
-												45.000đ <span>50.000đ</span>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="col-lg-4">
-								<div class="product__discount__item">
-									<div class="product__discount__item__pic set-bg"
-										data-setbg="img/product/che-day.png">
-										<div class="product__discount__percent">-10%</div>
-										<ul class="product__item__pic__hover">
-											<li><a href="#"><i class="fa fa-heart"></i></a></li>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
-									</div>
-									<a href="./infor-product.html">
-										<div class="product__discount__item__text">
-											<h5>Cây Chè Dây</h5>
-											<p>
-												3,8 <i class="fa fa-star" style="color: #ffA200"></i>
-											</p>
 
-											<div class="product__item__price">
-												34.000đ <span>40.000đ</span>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
-							<div class="col-lg-4">
-								<div class="product__discount__item">
-									<div class="product__discount__item__pic set-bg"
-										data-setbg="img/product/bang-dai-loan.png">
-										<div class="product__discount__percent">-28%</div>
-										<ul class="product__item__pic__hover">
-											<li><a href="#"><i class="fa fa-heart"></i></a></li>
-											<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
-									</div>
-									<a href="./infor-product.html">
-										<div class="product__discount__item__text">
 
-											<h5>Bàng Đài Loan</h5>
-											<p>
-												3,8 <i class="fa fa-star" style="color: #ffA200"></i>
-											</p>
 
-											<div class="product__item__price">
-												23.000đ <span>35.000đ</span>
-											</div>
-										</div>
-									</a>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -363,73 +175,21 @@
 					</c:forEach>
 
 
-
-					<div class="product__pagination">
-						<a href="./shop-grid.html">1</a> <a href="./shop-grid-2.html">2</a>
-						<a href="./shop-grid-3.html">3</a> <a href="./shop-grid-4.html">4</a>
-						<a href="./shop-grid-5.html">5</a> <a href="./shop-grid-6.html">6</a>
-						<a href=""><i class="fa fa-long-arrow-right"></i></a>
-					</div>
+				</div>
+				<div class="product__pagination">
+					<a href="./shop-grid.html">1</a> <a href="./shop-grid-2.html">2</a>
+					<a href="./shop-grid-3.html">3</a> <a href="./shop-grid-4.html">4</a>
+					<a href="./shop-grid-5.html">5</a> <a href="./shop-grid-6.html">6</a>
+					<a href=""><i class="fa fa-long-arrow-right"></i></a>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+	<%@ include file="/common/footer.jsp"%> </section>
 	<!-- Product Section End -->
 
 	<!-- Footer Section Begin -->
-	<footer class="footer spad">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-6 col-sm-6">
-				<div class="footer__about">
-					<div class="footer__about__logo">
-						<a href="./index.html"><img src="img/logo2.png" alt=""></a>
-					</div>
-					<ul>
-						<li>Địa chỉ: Trường ĐH Nông Lâm TP.HCM</li>
-						<li>Điện thoại: +84 888.888.888</li>
-						<li>Email: @st.hcmuaf.edu.vn</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
-				<div class="footer__widget">
-					<h5>Hướng dẫn và chính sách</h5>
-					<ul>
-						<li><a href="huongdan/muahang.html">Hướng dẫn mua hàng</a></li>
-						<li><a href="huongdan/taotk.html">Hướng dẫn tạo tài khoản</a></li>
-						<li><a href="huongdan/thanhtoan.html">Hướng dẫn thanh
-								toán</a></li>
 
-					</ul>
-				</div>
-				<div class="footer__widget">
-					<ul>
-						<li><a href="chinhsach/baomat.html">Chính sách bảo mật</a></li>
-						<li><a href="chinhsach/dichvu.html">Điều khoản dịch vụ</a></li>
-						<li><a href="chinhsach/vanchuyen.html">Vận chuyển và giao
-								hàng</a></li>
-						<li><a href="chinhsach/daily.html">Chính sách Đại lý</a></li>
-
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-12">
-				<div class="footer__widget">
-					<div class="map">
-						<h5>Bản đồ</h5>
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.214525476915!2d106.78957301402471!3d10.871281660410226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175276398969f7b%3A0x9672b7efd0893fc4!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBOw7RuZyBMw6JtIFRwLiBI4buTIENow60gTWluaA!5e0!3m2!1svi!2s!4v1668134354172!5m2!1svi!2s"
-							width="600" height="300" style="border: 0;" allowfullscreen=""
-							loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</div>
-	</footer>
 	<!-- Footer Section End -->
 
 	<!-- Js Plugins -->

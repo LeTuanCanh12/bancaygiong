@@ -1,6 +1,7 @@
 package vn.edu.hcmuaf.fit.controller.web;
 
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -10,21 +11,20 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import vn.edu.hcmuaf.fit.dao.HomeDao;
 import vn.edu.hcmuaf.fit.dao.ListProductDao;
 import vn.edu.hcmuaf.fit.model.Product;
 
 /**
- * Servlet implementation class HomeController
+ * Servlet implementation class SearchController
  */
-@WebServlet(urlPatterns = "/trang-chu")
-public class HomeController extends HttpServlet {
+@WebServlet("/search")
+public class SearchController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public HomeController() {
+	public SearchController() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -33,24 +33,22 @@ public class HomeController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
 	 *      response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-
-		RequestDispatcher rd = request.getRequestDispatcher("/views/web/home.jsp");
-
-		HomeDao dao = new HomeDao();
-		List<Product> list = dao.getProductCommon();
+		response.setContentType("text/html;charset=UTF-8");
 		
-		ListProductDao daoSale = new ListProductDao();
-		List<Product> listSale = daoSale.getProductSales();
-		
-		request.setAttribute("listCo", list);
-		
-		request.setAttribute("listSale", listSale);
+		String txtSearch = request.getParameter("txt");
+		if (txtSearch.equalsIgnoreCase("cam")) {
+			ListProductDao dao = new ListProductDao();
+			List<Product> listFind = dao.findProduct(txtSearch);
 
-		request.getRequestDispatcher("/views/web/home.jsp");
-		rd.forward(request, response);
+			request.setAttribute("listPro", listFind);
+			request.getRequestDispatcher("/views/web/listProduct.jsp")
+			.forward(request, response);
+		
+		}
+
 	}
 
 	

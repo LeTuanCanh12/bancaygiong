@@ -3,7 +3,7 @@ package vn.edu.hcmuaf.fit.model;
 import java.sql.Date;
 
 public class Product {
-	String pro_id;
+	int pro_id;
 	String name;
 	int price;
 	String pro_text;
@@ -13,7 +13,7 @@ public class Product {
 	int cate_id;
 	Date added_date;
 
-	public Product(String pro_id, String name, int price) {
+	public Product(int pro_id, String name, int price) {
 		super();
 		this.pro_id = pro_id;
 		this.name = name;
@@ -22,14 +22,14 @@ public class Product {
 	}
 
 	public int discount_price() {
-		return (int) (price*(1-per_discount));
+		return (int) (price * (1 - per_discount));
 
 	}
+
 	public int discount_per() {
-		return (int)(Math.round(per_discount *100));
+		return (int) (Math.round(per_discount * 100));
 
 	}
-	
 
 	public String getPro_text() {
 		return pro_text;
@@ -84,16 +84,18 @@ public class Product {
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	public String toString() {
-		return "Product [pro_id=" + pro_id + ", name=" + name + ", price=" + price + "]";
-	}
-
-	public String getPro_id() {
+	public int getPro_id() {
 		return pro_id;
 	}
 
-	public void setPro_id(String pro_id) {
+	@Override
+	public String toString() {
+		return "Product [pro_id=" + pro_id + ", name=" + name + ", price=" + price + ", pro_text=" + pro_text
+				+ ", discount_stt=" + discount_stt + ", per_discount=" + per_discount + ", quantity=" + quantity
+				+ ", cate_id=" + cate_id + ", added_date=" + added_date + "]";
+	}
+
+	public void setPro_id(int pro_id) {
 		this.pro_id = pro_id;
 	}
 

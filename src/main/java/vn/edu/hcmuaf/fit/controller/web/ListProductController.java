@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import vn.edu.hcmuaf.fit.DAO.DAO;
+import vn.edu.hcmuaf.fit.dao.ListProductDao;
 import vn.edu.hcmuaf.fit.model.Product;
 
 @WebServlet(urlPatterns = { "/list-product" })
@@ -23,17 +23,27 @@ public class ListProductController extends HttpServlet {
 		// TODO Auto-generated method stub
 		RequestDispatcher rd = req.getRequestDispatcher("/views/web/listProduct.jsp");
 
-		DAO dao = new DAO();
+		ListProductDao dao = new ListProductDao();
 		List<Product> list = dao.getAllProduct();
 		List<Product> listSale = dao.getProductSales();
 
 		req.setAttribute("listSale", listSale);
 		req.setAttribute("listPro", list);
-		
+
 		req.getRequestDispatcher("/views/web/listProduct.jsp");
+
 		rd.forward(req, resp);
 
 	}
+	
+
+//	public static void main(String[] args) {
+//		ListProductDao dao = new ListProductDao();
+//		List<Product> listSale = dao.getProductSales();
+//		for (Product product : listSale) {
+//			System.out.println(product);
+//		}
+//	}
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
