@@ -54,15 +54,15 @@
 	<!-- Hero Section End -->
 
 	<!-- Breadcrumb Section Begin -->
-	<section class="breadcrumb-section set-bg"
-		data-setbg="img/breadcrumb.jpg">
-	<div class="container">
-		<div class="row">
+	<section class="breadcrumb-section set-bg" data-setbg="<c:url value='/template/web/img/breadcrumb.jpg'/>" style="background-image: url(<c:url value='/template/web/img/breadcrumb.jpg'/>);" >
+	<div class="container"  >
+		<div class="row" style="" >
 			<div class="col-lg-12 text-center">
 				<div class="breadcrumb__text">
 					<h2>Sản phẩm</h2>
 					<div class="breadcrumb__option">
-						<a href="./index.html">Trang chủ</a> <span>Sản phẩm</span>
+						<a href="<c:url value='/trang-chu' /> ">Trang chủ</a> <span>Sản
+							phẩm</span>
 					</div>
 				</div>
 			</div>
@@ -99,11 +99,12 @@
 											<div class="product__discount__item__text">
 												<h5>${o.name }</h5>
 												<p>
-													3,4 <i class="fa fa-star" style="color: #ffA200"></i>
+													${o.rate.getPoint()} <i class="fa fa-star"
+														style="color: #ffA200"></i>
 												</p>
-												<div class="product__item__price">
+												<div class="product__item__price" style="color: red">
 
-													${o.discount_price()} <span>${o.price }</span>
+													${o.discount_price()}đ <span>${o.price }đ</span>
 												</div>
 											</div>
 										</a>
@@ -165,9 +166,10 @@
 									<div class="product__item__text">
 										<h6>${i.name}</h6>
 										<p>
-											3,4 <i class="fa fa-star" style="color: #ffA200"></i>
+											${i.rate.getPoint()} <i class="fa fa-star"
+												style="color: #ffA200"></i>
 										</p>
-										<h5>${i.price}</h5>
+										<h5>${i.price}đ</h5>
 									</div>
 								</a>
 							</div>
