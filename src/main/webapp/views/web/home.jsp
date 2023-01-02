@@ -77,10 +77,10 @@
 							<button type="submit" class="site-btn" onclick="onClick()">
 								<i class="fa fa-search"></i> Tìm kiếm
 							</button>
-							
+
 						</form>
 					</div>
-					
+
 
 					<div id="sales">
 						<a href="#"> <img
@@ -95,7 +95,7 @@
 							Cây giống <br />ươm,cấy,ghép
 						</h2>
 						<p>Miễn phí giao hàng, không lo về giá</p>
-						<a href="./views/web/listProduct.jsp" class="primary-btn">MUA
+						<a href="<c:url value='/list-product'/> " class="primary-btn">MUA
 							NGAY</a>
 					</div>
 				</div>
@@ -118,7 +118,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-6">
-					<a href="detail?pid=${o.id}" style="color: white">
+					<a href="detail?pid=52" style="color: white">
 						<div class="banner__pic">
 							<img src="<c:url value='/template/web/img/banner/cachua.jpg'/>"
 								alt="">
@@ -127,7 +127,7 @@
 					</a>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6">
-					<a href="./infor-product.html" style="color: white">
+					<a href="detail?pid=46 style="color:white">
 						<div class="banner__pic">
 							<img src=" <c:url value='/template/web/img/banner/cay_tao.jpg'/>">
 							<div class="button_vd">Mua ngay</div>
@@ -157,9 +157,9 @@
 									</div>
 									<div class="latest-product__item__text">
 										<h6>${o.name}</h6>
-										<span>${o.price}</span>
+										<span>${o.price}đ</span>
 										<p>
-											4,9 <i class="fa fa-star" style="color: #ffA200"></i>
+											${o.rate.getPoint()} <i class="fa fa-star" style="color: #ffA200"></i>
 										</p>
 									</div>
 								</a>
@@ -168,8 +168,8 @@
 						</div>
 
 						<div class="latest-prdouct__slider__item">
-							<c:forEach begin="3" items="${listCo }" var="o">
-								<a href="./infor-product.html" class="latest-product__item">
+							<c:forEach begin="3" items="${listCo}" var="o">
+								<a href="detail?pid=${o.pro_id}" class="latest-product__item">
 									<div class="latest-product__item__pic">
 										<img src="img/latest-product/oi-gion-it-hat.jpg" alt="">
 									</div>
@@ -177,7 +177,7 @@
 										<h6>${o.name }</h6>
 										<span>${o.price }đ</span>
 										<p>
-											3,9 <i class="fa fa-star" style="color: #ffA200"></i>
+											${o.rate.getPoint()}<i class="fa fa-star" style="color: #ffA200"></i>
 										</p>
 
 									</div>
@@ -194,109 +194,42 @@
 					<h4>Đánh giá cao</h4>
 					<div class="latest-product__slider owl-carousel">
 						<div class="latest-prdouct__slider__item">
-							<a href="./infor-product.html" class="latest-product__item">
-								<div class="latest-product__item__pic">
-									<img style="width: 100px"
-										src="img/latest-product/sau-rieng-thai.webp" alt="">
-								</div>
-								<div class="latest-product__item__text">
-									<h6>Sầu riêng thái</h6>
-									<span>80.000đ</span>
-									<p>
-										4,9 <i class="fa fa-star" style="color: #ffA200"></i>
-									</p>
-								</div>
-							</a> <a href="./infor-product.html" class="latest-product__item">
-								<div class="latest-product__item__pic">
-									<img src="img/latest-product/hong-gion.png" alt="">
-								</div>
-								<div class="latest-product__item__text">
-									<h6>Hồng giòn ghép</h6>
-									<span>50.000đ</span>
-									<p>
-										4,7 <i class="fa fa-star" style="color: #ffA200"></i>
-									</p>
+							<c:forEach items="${listRa}" end="2" var="o">
+								<a href="./infor-product.html" class="latest-product__item">
+									<div class="latest-product__item__pic">
+										<img style="width: 100px"
+											src="img/latest-product/sau-rieng-thai.webp" alt="">
+									</div>
+									<div class="latest-product__item__text">
+										<h6>${o.name}</h6>
+										<span>${o.price}đ</span>
+										<p>
+											${o.rate.getPoint()} <i class="fa fa-star"
+												style="color: #ffA200"></i>
+										</p>
+									</div>
+								</a>
+							</c:forEach>
 
-								</div>
-							</a> <a href="./infor-product.html" class="latest-product__item">
-								<div class="latest-product__item__pic">
-									<img src="img/latest-product/cam-c36.png" alt="">
-								</div>
-								<div class="latest-product__item__text">
-									<h6>Cây Cam C36</h6>
-									<span>18.000đ</span>
-									<p>
-										4,4 <i class="fa fa-star" style="color: #ffA200"></i>
-									</p>
-
-								</div>
-							</a>
 						</div>
+						
 						<div class="latest-prdouct__slider__item">
-							<a href="./infor-product.html" class="latest-product__item">
-								<div class="latest-product__item__pic">
-									<img src="img/latest-product/vu-sua-nu-hoang.jpg" alt="">
-								</div>
-								<div class="latest-product__item__text">
-									<h6>Vú sữa Nữ Hoàng</h6>
-									<span>60.000đ</span>
-									<p>
-										4,3 <i class="fa fa-star" style="color: #ffA200"></i>
-									</p>
+							<c:forEach items="${listRa}" begin="3" var="o">
+								<a href="./infor-product.html" class="latest-product__item">
+									<div class="latest-product__item__pic">
+										<img src="img/latest-product/xa-cu.png" alt="">
+									</div>
+									<div class="latest-product__item__text">
+										<h6>${o.name }</h6>
+										<span>${o.price }đ</span>
+										<p>
+											${o.rate.getPoint()}<i class="fa fa-star" style="color: #ffA200"></i>
+										</p>
 
-								</div>
-							</a> <a href="./infor-product.html" class="latest-product__item">
-								<div class="latest-product__item__pic">
-									<img src="img/latest-product/Mit-khong-hat.jpg" alt="">
-								</div>
-								<div class="latest-product__item__text">
-									<h6>Mít không hạt</h6>
-									<span>65.000đ</span>
-									<p>
-										4,1<i class="fa fa-star" style="color: #ffA200"></i>
-									</p>
-
-								</div>
-							</a> <a href="./infor-product.html" class="latest-product__item">
-								<div class="latest-product__item__pic">
-									<img src="img/latest-product/bo-sap.png" alt="">
-								</div>
-								<div class="latest-product__item__text">
-									<h6>Bơ sáp</h6>
-									<span>40.000đ</span>
-									<p>
-										4,1 <i class="fa fa-star" style="color: #ffA200"></i>
-									</p>
-
-								</div>
-							</a>
-						</div>
-						<div class="latest-prdouct__slider__item">
-							<a href="./infor-product.html" class="latest-product__item">
-								<div class="latest-product__item__pic">
-									<img src="img/latest-product/xa-cu.png" alt="">
-								</div>
-								<div class="latest-product__item__text">
-									<h6>Cây xà cừ</h6>
-									<span>25.000đ</span>
-									<p>
-										4,0 <i class="fa fa-star" style="color: #ffA200"></i>
-									</p>
-
-								</div>
-							</a> <a href="./infor-product.html" class="latest-product__item">
-								<div class="latest-product__item__pic">
-									<img src="img/latest-product/oi-gion-it-hat.jpg" alt="">
-								</div>
-								<div class="latest-product__item__text">
-									<h6>Ổi giòn ít hạt</h6>
-									<span>35.000đ</span>
-									<p>
-										3,9 <i class="fa fa-star" style="color: #ffA200"></i>
-									</p>
-
-								</div>
-							</a>
+									</div>
+								</a>
+							</c:forEach>
+							
 
 						</div>
 					</div>
@@ -308,7 +241,7 @@
 					<div class="latest-product__slider owl-carousel">
 						<div class="latest-prdouct__slider__item">
 							<c:forEach items="${listSale}" end="2" var="o">
-								<a href="./infor-product.html" class="latest-product__item">
+								<a href="detail?pid=${o.pro_id}" class="latest-product__item">
 									<div class="latest-product__item__pic">
 										<img style="width: 100px" src="img/latest-product/dobau.png"
 											alt="">
@@ -328,8 +261,8 @@
 							</c:forEach>
 						</div>
 						<div class="latest-prdouct__slider__item">
-							<c:forEach begin="1" items="${listCo }" end="3" var="o">
-								<a href="./infor-product.html" class="latest-product__item">
+							<c:forEach begin="3" items="${listSale }" end="5"  var="o">
+								<a href="detail?pid=${o.pro_id}" class="latest-product__item">
 									<div class="latest-product__item__pic">
 										<img style="width: 100px"
 											src="img/latest-product/coc-thai.png" alt="">
@@ -347,7 +280,7 @@
 									</div>
 								</a>
 							</c:forEach>
-							 
+
 						</div>
 					</div>
 				</div>
@@ -371,9 +304,10 @@
 			<div class="col-lg-4 col-md-4 col-sm-6">
 				<div class="blog__item">
 					<div class="blog__item__pic">
-						
-						<img src=" <c:url value='/template/web/img/blog/kythuattrongcay.jfif'/>" style="height: 240px"
-							alt="">
+
+						<img
+							src=" <c:url value='/template/web/img/blog/kythuattrongcay.jfif'/>"
+							style="height: 240px" alt="">
 					</div>
 					<div class="blog__item__text">
 						<ul>
@@ -394,7 +328,8 @@
 			<div class="col-lg-4 col-md-4 col-sm-6">
 				<div class="blog__item">
 					<div class="blog__item__pic">
-						<img src=" <c:url value='/template/web/img/blog/phattrien.jfif'/>" alt="">
+						<img src=" <c:url value='/template/web/img/blog/phattrien.jfif'/>"
+							alt="">
 					</div>
 					<div class="blog__item__text">
 						<ul>
@@ -416,8 +351,9 @@
 			<div class="col-lg-4 col-md-4 col-sm-6">
 				<div class="blog__item">
 					<div class="blog__item__pic">
-					
-						<img src=" <c:url value='/template/web/img/blog/sauri.jpg'/>" alt="">
+
+						<img src=" <c:url value='/template/web/img/blog/sauri.jpg'/>"
+							alt="">
 					</div>
 					<div class="blog__item__text">
 						<ul>
@@ -438,7 +374,7 @@
 		</div>
 	</div>
 	<%@ include file="/common/footer.jsp"%>
-	</section>
+	 </section>
 	<script src="<c:url value='/template/web/js/jquery-3.3.1.min.js' />"></script>
 	<script src="<c:url value='/template/web/js/bootstrap.min.js' />"></script>
 	<script
