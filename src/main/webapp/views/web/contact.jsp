@@ -22,46 +22,8 @@
     <link rel="stylesheet" href=" <c:url value='/template/web/css/footer.css' />">
 </head>
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="header__logo">
-					<a href="home.jsp"><img src="./../../template/web/img/logo.png"></a>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<nav class="header__menu">
-				<ul>
-					<li class="active"><a href="home.jsp">Trang Chủ</a></li>
-					<li><a href="listProduct.jsp">Sản Phẩm</a></li>
-					<li><a href="#">Phân Loại</a>
-						<ul class="header__menu__dropdown">
-							<li><a href="productForCate.jsp">Cây ăn quả</a></li>
-							<li><a href="productForCate.jsp">Cây công nghiệp</a></li>
-							<li><a href="productForCate.jsp">Cây lấy gỗ</a></li>
-						</ul></li>
-					<li><a href="contact.jsp">Liên hệ</a></li>
-				</ul>
-				</nav>
-			</div>
-			<div class="col-lg-3">
-				<div class="header__cart">
-					<ul>
-						<li><a href="favourite.jsp"><i class="fa fa-heart"></i>
-								<span>1</span></a></li>
-						<li><a href="cart.jsp"><i class="fa fa-shopping-bag"></i>
-								<span>3</span></a></li>
-					</ul>
-					<div class="header__cart__price">
-						item: <span>0.00</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="humberger__open">
-			<i class="fa fa-bars"></i>
-		</div>
-	</div>
+<%@include file="/common/header.jsp"%>
+	
 	</header>
 	<!-- Header Section End -->
 

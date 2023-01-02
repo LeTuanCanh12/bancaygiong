@@ -41,19 +41,31 @@ public class HomeController extends HttpServlet {
 
 		HomeDao dao = new HomeDao();
 		List<Product> list = dao.getProductCommon();
-		
+
 		ListProductDao daoSale = new ListProductDao();
 		List<Product> listSale = daoSale.getProductSales();
-		
+
+		HomeDao daoRating2 = new HomeDao();
+		List<Product> listRating2 = daoRating2.getProductRating2();
+
 		request.setAttribute("listCo", list);
-		
+
 		request.setAttribute("listSale", listSale);
+
+		request.setAttribute("listRa", listRating2);
 
 		request.getRequestDispatcher("/views/web/home.jsp");
 		rd.forward(request, response);
 	}
 
-	
+//	public static void main(String[] args) {
+//		HomeDao daoRating2 = new HomeDao();
+//		List<Product> listRating2 = daoRating2.getProductCommon();
+//
+//		for (Product product : listRating2) {
+//			System.out.println(product);
+//		}
+//	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse

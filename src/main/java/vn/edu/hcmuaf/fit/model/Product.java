@@ -12,6 +12,7 @@ public class Product {
 	int quantity;
 	int cate_id;
 	Date added_date;
+	Rating rate;
 
 	public Product(int pro_id, String name, int price) {
 		super();
@@ -19,6 +20,23 @@ public class Product {
 		this.name = name;
 		this.price = price;
 
+	}
+
+	public Rating getRate() {
+		return rate;
+	}
+
+	public String checkout() {
+
+		if (this.quantity > 0) {
+			return "Còn hàng";
+		} else {
+			return "Hết hàng";
+		}
+	}
+
+	public void setRate(Rating rate) {
+		this.rate = rate;
 	}
 
 	public int discount_price() {
@@ -114,4 +132,7 @@ public class Product {
 	public void setPrice(int price) {
 		this.price = price;
 	}
+
+	
+
 }

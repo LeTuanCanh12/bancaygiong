@@ -2,7 +2,7 @@ package vn.edu.hcmuaf.fit.model;
 
 public class Rating {
 	String pro_id;
-	String user_id;
+	UserModel user_id;
 	float point;
 	String note;
 
@@ -24,11 +24,11 @@ public class Rating {
 		this.pro_id = pro_id;
 	}
 
-	public String getUser_id() {
+	public UserModel getUser_id() {
 		return user_id;
 	}
 
-	public void setUser_id(String user_id) {
+	public void setUser_id(UserModel user_id) {
 		this.user_id = user_id;
 	}
 

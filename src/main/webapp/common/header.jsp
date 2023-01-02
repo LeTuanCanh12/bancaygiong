@@ -85,11 +85,11 @@
 				<div class="header__cart">
 					<ul>
 						<li><a href="<c:url value='/views/web/contact.jsp'/>"><i class="fa fa-heart"></i> <span>1</span></a></li>
-						<li><a href="<c:url value='/views/web/contact.jsp'/>"><i class="fa fa-shopping-bag"></i>
+						<li><a href="<c:url value='cartCheck'/>"><i class="fa fa-shopping-bag"></i>
 								<span>3</span></a></li>
 					</ul>
 					<div class="header__cart__price">
-						item: <span>0.00</span>
+						 <%-- item: <span>0.00</span>--%>
 					</div>
 				</div>
 			</div>

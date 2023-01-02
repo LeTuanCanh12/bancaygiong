@@ -127,7 +127,7 @@
 					</a>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6">
-					<a href="detail?pid=46 style="color:white">
+					<a href="detail?pid=46" style="color: white">
 						<div class="banner__pic">
 							<img src=" <c:url value='/template/web/img/banner/cay_tao.jpg'/>">
 							<div class="button_vd">Mua ngay</div>
@@ -159,7 +159,8 @@
 										<h6>${o.name}</h6>
 										<span>${o.price}đ</span>
 										<p>
-											${o.rate.getPoint()} <i class="fa fa-star" style="color: #ffA200"></i>
+											${o.rate.getPoint()} <i class="fa fa-star"
+												style="color: #ffA200"></i>
 										</p>
 									</div>
 								</a>
@@ -177,7 +178,8 @@
 										<h6>${o.name }</h6>
 										<span>${o.price }đ</span>
 										<p>
-											${o.rate.getPoint()}<i class="fa fa-star" style="color: #ffA200"></i>
+											${o.rate.getPoint()}<i class="fa fa-star"
+												style="color: #ffA200"></i>
 										</p>
 
 									</div>
@@ -195,7 +197,7 @@
 					<div class="latest-product__slider owl-carousel">
 						<div class="latest-prdouct__slider__item">
 							<c:forEach items="${listRa}" end="2" var="o">
-								<a href="./infor-product.html" class="latest-product__item">
+								<a href="detail?pid=${o.pro_id}" class="latest-product__item">
 									<div class="latest-product__item__pic">
 										<img style="width: 100px"
 											src="img/latest-product/sau-rieng-thai.webp" alt="">
@@ -212,10 +214,10 @@
 							</c:forEach>
 
 						</div>
-						
+
 						<div class="latest-prdouct__slider__item">
 							<c:forEach items="${listRa}" begin="3" var="o">
-								<a href="./infor-product.html" class="latest-product__item">
+								<a href="detail?pid=${o.pro_id}" class="latest-product__item">
 									<div class="latest-product__item__pic">
 										<img src="img/latest-product/xa-cu.png" alt="">
 									</div>
@@ -223,13 +225,14 @@
 										<h6>${o.name }</h6>
 										<span>${o.price }đ</span>
 										<p>
-											${o.rate.getPoint()}<i class="fa fa-star" style="color: #ffA200"></i>
+											${o.rate.getPoint()}<i class="fa fa-star"
+												style="color: #ffA200"></i>
 										</p>
 
 									</div>
 								</a>
 							</c:forEach>
-							
+
 
 						</div>
 					</div>
@@ -261,7 +264,7 @@
 							</c:forEach>
 						</div>
 						<div class="latest-prdouct__slider__item">
-							<c:forEach begin="3" items="${listSale }" end="5"  var="o">
+							<c:forEach begin="3" items="${listSale }" end="5" var="o">
 								<a href="detail?pid=${o.pro_id}" class="latest-product__item">
 									<div class="latest-product__item__pic">
 										<img style="width: 100px"
@@ -373,8 +376,7 @@
 			</div>
 		</div>
 	</div>
-	<%@ include file="/common/footer.jsp"%>
-	 </section>
+	<%@ include file="/common/footer.jsp"%> </section>
 	<script src="<c:url value='/template/web/js/jquery-3.3.1.min.js' />"></script>
 	<script src="<c:url value='/template/web/js/bootstrap.min.js' />"></script>
 	<script

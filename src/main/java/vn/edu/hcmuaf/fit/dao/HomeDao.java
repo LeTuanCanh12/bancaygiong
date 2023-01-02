@@ -8,14 +8,13 @@ import java.util.List;
 
 import vn.edu.hcmuaf.fit.Connection.DBContext;
 import vn.edu.hcmuaf.fit.model.Product;
+import vn.edu.hcmuaf.fit.model.Rating;
 
 public class HomeDao {
 	Connection conn = null;
 	PreparedStatement ps = null;
 	ResultSet rs = null;
 
-	
-	
 	public List<Product> getAllProduct() {
 		List<Product> list = new ArrayList<>();
 		String query = "select pro_id, NAME, price from product";
@@ -35,8 +34,7 @@ public class HomeDao {
 
 	public List<Product> getProductCommon() {
 		List<Product> list = new ArrayList<>();
-		String query ="select pro_id, NAME, price, per_discount , quantity from product order by quantity desc limit 6";
-				
+		String query = "select  p.pro_id, p.name ,p.price, avg(r.point) as pro_point, p.quantity from product p join rating r on p.pro_id = r.pro_id  group by p.pro_id order by quantity desc limit 6";
 		try {
 			conn = new DBContext().getConnection();
 			ps = conn.prepareStatement(query);
@@ -46,7 +44,7 @@ public class HomeDao {
 				pro.setPro_id(rs.getInt("pro_id"));
 				pro.setName(rs.getString("name"));
 				pro.setPrice(rs.getInt("price"));
-				pro.setPer_discount(rs.getDouble("per_discount"));
+				pro.setRate(new Rating(rs.getFloat("pro_point")));
 				list.add(pro);
 			}
 		} catch (Exception e) {
@@ -54,12 +52,38 @@ public class HomeDao {
 		}
 		return list;
 	}
-	
+
+	public List<Product> getProductRating2() {
+		List<Product> list = new ArrayList<>();
+		String query = "select p.pro_id, p.name, p.price, avg(r.point) as pro_point from product p join rating r on p.pro_id = r.pro_id group by p.pro_id order by pro_point desc limit 6";
+		try {
+			conn = new DBContext().getConnection();
+			ps = conn.prepareStatement(query);
+			rs = ps.executeQuery();
+			while (rs.next()) {
+				Product pro = new Product();
+				pro.setPro_id(rs.getInt("pro_id"));
+				pro.setName(rs.getString("name"));
+				pro.setPrice(rs.getInt("price"));
+				pro.setRate(new Rating(rs.getFloat("pro_point")));
+				list.add(pro);
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return list;
+	}
 
 	public static void main(String[] args) {
 		HomeDao dao = new HomeDao();
 		List<Product> list = dao.getProductCommon();
-		System.out.println(list);
-		
+		if (list == null)
+			System.out.println("sai");
+		else
+			for (Product product : list) {
+
+				System.out.println(product);
+			}
+
 	}
 }

@@ -37,21 +37,20 @@ public class SearchController extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.setContentType("text/html;charset=UTF-8");
-		
+
 		String txtSearch = request.getParameter("txt");
-		if (txtSearch.equalsIgnoreCase("cam")) {
+
+		
 			ListProductDao dao = new ListProductDao();
 			List<Product> listFind = dao.findProduct(txtSearch);
-
+			
 			request.setAttribute("listPro", listFind);
-			request.getRequestDispatcher("/views/web/listProduct.jsp")
-			.forward(request, response);
-		
-		}
+			request.getRequestDispatcher("/views/web/listProduct.jsp").forward(request, response);
+			
+			
+		 
 
 	}
-
-	
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
