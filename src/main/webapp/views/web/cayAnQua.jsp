@@ -61,7 +61,7 @@
 		<div class="row" style="">
 			<div class="col-lg-12 text-center">
 				<div class="breadcrumb__text">
-					<h2>Sản phẩm</h2>
+					<h2>Cây Ăn Quả</h2>
 					<div class="breadcrumb__option">
 						<a href="<c:url value='/trang-chu' /> ">Trang chủ</a> <span>Sản
 							phẩm</span>
@@ -108,26 +108,23 @@
 										src="img/product/sau-rieng-thai.png"> </a>
 
 									<ul class="product__item__pic__hover">
-										<li><a href="yeu-thich?proId=${i.pro_id}"><i class="fa fa-heart"></i></a></li>
-										<li><a href="gio-hang?proId=${i.pro_id}"><i class="fa fa-shopping-cart"></i></a></li>
+										<li><a href="yeu-thich?proId=${i.pro_id}"><i
+												class="fa fa-heart"></i></a></li>
+										<li><a href="gio-hang?proId=${i.pro_id}"><i
+												class="fa fa-shopping-cart"></i></a></li>
 									</ul>
 
 								</div>
 								<a href="thong-tin-san-pham?pid=${i.pro_id}">
 									<div class="product__item__text">
 										<h6>${i.name}</h6>
-										<p>
-											${i.rate.getPoint()} <i class="fa fa-star"
-												style="color: #ffA200"></i>
-										</p>
+										
 										<h5>${i.price}đ</h5>
 									</div>
 								</a>
 							</div>
 						</div>
 					</c:forEach>
-
-
 				</div>
 				<div class="product__pagination">
 					<c:forEach begin="1" end="${endPage }" var="i">
