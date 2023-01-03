@@ -4,28 +4,21 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.List;
+import java.sql.Statement;
 
-import javax.security.auth.RefreshFailedException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.slf4j.agent.AgentPremain;
-
 import vn.edu.hcmuaf.fit.Connection.DBContext;
-import vn.edu.hcmuaf.fit.dao.CartDao;
-import vn.edu.hcmuaf.fit.dao.ListProductDao;
-import vn.edu.hcmuaf.fit.model.Product;
 
 /**
- * Servlet implementation class CartController
+ * Servlet implementation class ContactController
  */
-@WebServlet(urlPatterns = { "/cartProduct" })
-public class CartController extends HttpServlet {
+@WebServlet("/gui-lien-he")
+public class ContactController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	Connection conn = null;
 	PreparedStatement ps = null;
@@ -34,7 +27,7 @@ public class CartController extends HttpServlet {
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public CartController() {
+	public ContactController() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -45,32 +38,35 @@ public class CartController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		// TODO Auto-generated method stub
 		try {
-			String id = request.getParameter("pid");
-			CartDao dao = new CartDao();
-			Product temp = new Product();
-			temp = dao.addCart(id);
-
+//			mo ket noi
 			conn = new DBContext().getConnection();
-			ps = conn.prepareStatement("insert into " 
-			+ "cart_pro(cart_id,pro_id,quantity) values(?,?,?)");
+			Statement stmt = null;
+//			lay du lieu nguoi dung
+			String name = request.getParameter("name");
+			int phone = Integer.parseInt(request.getParameter("phone"));
+			String mail = request.getParameter("email");
+			String content = request.getParameter("note");
+			
+//			khoi tao lenh
+			String sql = "INSERT INTO contact value" + "('" + name + "'" + "," + phone + ",'" + mail + "'" + ",'"
+					+ content + "'" + ");";
+			stmt.executeUpdate(sql);
 
-			ps.setString(1, "1");
-			ps.setInt(1, temp.getPro_id());
-			ps.setInt(3, temp.getQuantity());
-			ps.execute();
 		} catch (Exception e) {
-			// TODO: handle exception
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 
-		response.setHeader("refresh", "1000");
-
-		request.getRequestDispatcher("/detail").forward(request, response);
-
+		request.getRequestDispatcher("/views/web/contact.jsp").forward(request, response);
 	}
 
 	public static void main(String[] args) {
-
+		String name = "canh";
+		String mail = "aaa";
+		String content = "bbb";
+		int phone = 020202;
 	}
 
 	/**

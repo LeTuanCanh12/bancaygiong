@@ -118,7 +118,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-6">
-					<a href="detail?pid=52" style="color: white">
+					<a href="thong-tin-san-pham?pid=52" style="color: white">
 						<div class="banner__pic">
 							<img src="<c:url value='/template/web/img/banner/cachua.jpg'/>"
 								alt="">
@@ -127,7 +127,7 @@
 					</a>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6">
-					<a href="detail?pid=46" style="color: white">
+					<a href="thong-tin-san-pham?pid=46" style="color: white">
 						<div class="banner__pic">
 							<img src=" <c:url value='/template/web/img/banner/cay_tao.jpg'/>">
 							<div class="button_vd">Mua ngay</div>
@@ -150,7 +150,7 @@
 
 						<div class="latest-prdouct__slider__item">
 							<c:forEach items="${listCo }" end="2" var="o">
-								<a href="detail?pid=${o.pro_id}" class="latest-product__item">
+								<a href="thong-tin-san-pham?pid=${o.pro_id}" class="latest-product__item">
 									<div class="latest-product__item__pic">
 										<img style="width: 100px"
 											src="img/latest-product/sau-rieng-thai.webp" alt="">
@@ -170,7 +170,7 @@
 
 						<div class="latest-prdouct__slider__item">
 							<c:forEach begin="3" items="${listCo}" var="o">
-								<a href="detail?pid=${o.pro_id}" class="latest-product__item">
+								<a href="thong-tin-san-pham?pid=${o.pro_id}" class="latest-product__item">
 									<div class="latest-product__item__pic">
 										<img src="img/latest-product/oi-gion-it-hat.jpg" alt="">
 									</div>
@@ -197,7 +197,7 @@
 					<div class="latest-product__slider owl-carousel">
 						<div class="latest-prdouct__slider__item">
 							<c:forEach items="${listRa}" end="2" var="o">
-								<a href="detail?pid=${o.pro_id}" class="latest-product__item">
+								<a href="thong-tin-san-pham?pid=${o.pro_id}" class="latest-product__item">
 									<div class="latest-product__item__pic">
 										<img style="width: 100px"
 											src="img/latest-product/sau-rieng-thai.webp" alt="">
@@ -217,7 +217,7 @@
 
 						<div class="latest-prdouct__slider__item">
 							<c:forEach items="${listRa}" begin="3" var="o">
-								<a href="detail?pid=${o.pro_id}" class="latest-product__item">
+								<a href="thong-tin-san-pham?pid=${o.pro_id}" class="latest-product__item">
 									<div class="latest-product__item__pic">
 										<img src="img/latest-product/xa-cu.png" alt="">
 									</div>
@@ -244,7 +244,7 @@
 					<div class="latest-product__slider owl-carousel">
 						<div class="latest-prdouct__slider__item">
 							<c:forEach items="${listSale}" end="2" var="o">
-								<a href="detail?pid=${o.pro_id}" class="latest-product__item">
+								<a href="thong-tin-san-pham?pid=${o.pro_id}" class="latest-product__item">
 									<div class="latest-product__item__pic">
 										<img style="width: 100px" src="img/latest-product/dobau.png"
 											alt="">
@@ -265,7 +265,7 @@
 						</div>
 						<div class="latest-prdouct__slider__item">
 							<c:forEach begin="3" items="${listSale }" end="5" var="o">
-								<a href="detail?pid=${o.pro_id}" class="latest-product__item">
+								<a href="thong-tin-san-pham?pid=${o.pro_id}" class="latest-product__item">
 									<div class="latest-product__item__pic">
 										<img style="width: 100px"
 											src="img/latest-product/coc-thai.png" alt="">

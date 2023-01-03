@@ -1,5 +1,8 @@
 package vn.edu.hcmuaf.fit.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Rating {
 	String pro_id;
 	UserModel user_id;
@@ -9,6 +12,15 @@ public class Rating {
 	public Rating() {
 		super();
 		// TODO Auto-generated constructor stub
+	}
+
+	public int listRate() {
+		List<Rating> list = new ArrayList<>();
+		Rating ra = new Rating();
+		list.add(ra);
+
+		return list.size();
+
 	}
 
 	public Rating(float point) {

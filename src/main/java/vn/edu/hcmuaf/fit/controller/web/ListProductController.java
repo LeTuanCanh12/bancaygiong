@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import vn.edu.hcmuaf.fit.dao.ListProductDao;
 import vn.edu.hcmuaf.fit.model.Product;
 
-@WebServlet(urlPatterns = { "/list-product" })
+@WebServlet(urlPatterns = { "/danh-sach-san-pham" })
 public class ListProductController extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;

@@ -54,9 +54,11 @@
 	<!-- Hero Section End -->
 
 	<!-- Breadcrumb Section Begin -->
-	<section class="breadcrumb-section set-bg" data-setbg="<c:url value='/template/web/img/breadcrumb.jpg'/>" style="background-image: url(<c:url value='/template/web/img/breadcrumb.jpg'/>);" >
-	<div class="container"  >
-		<div class="row" style="" >
+	<section class="breadcrumb-section set-bg"
+		data-setbg="<c:url value='/template/web/img/breadcrumb.jpg'/>"
+		style="background-image: url(<c:url value='/template/web/img/breadcrumb.jpg'/>);">
+	<div class="container">
+		<div class="row" style="">
 			<div class="col-lg-12 text-center">
 				<div class="breadcrumb__text">
 					<h2>Sản phẩm</h2>
@@ -90,12 +92,12 @@
 											data-setbg="./img/product/dobau.png">
 											<div class="product__discount__percent">-${o.discount_per() }%</div>
 											<ul class="product__item__pic__hover">
-												<li><a href="#"><i class="fa fa-heart"></i></a></li>
-												<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+												<li><a href="yeu-thich?proId=${o.pro_id}"><i class="fa fa-heart"></i></a></li>
+												<li><a href="gio-hang?proId=${o.pro_id}"><i class="fa fa-shopping-cart"></i></a></li>
 											</ul>
 										</div>
 
-										<a href="./infor-product.html">
+										<a href="thong-tin-san-pham?pid=${o.pro_id}">
 											<div class="product__discount__item__text">
 												<h5>${o.name }</h5>
 												<p>
@@ -153,16 +155,16 @@
 							<div class="product__item">
 								<div class="product__item__pic set-bg"
 									data-setbg="img/product/product-1.jpg">
-									<a href="infor-product.html"><img
+									<a href="thong-tin-san-pham?pid=${i.pro_id}"><img
 										src="img/product/sau-rieng-thai.png"> </a>
 
 									<ul class="product__item__pic__hover">
-										<li><a href="#"><i class="fa fa-heart"></i></a></li>
-										<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+										<li><a href="yeu-thich?proId=${i.pro_id}"><i class="fa fa-heart"></i></a></li>
+										<li><a href="gio-hang?proId=${o.pro_id}"><i class="fa fa-shopping-cart"></i></a></li>
 									</ul>
 
 								</div>
-								<a href="./infor-product.html">
+								<a href="thong-tin-san-pham?pid=${i.pro_id}">
 									<div class="product__item__text">
 										<h6>${i.name}</h6>
 										<p>

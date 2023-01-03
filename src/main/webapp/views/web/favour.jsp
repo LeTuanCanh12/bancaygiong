@@ -55,9 +55,9 @@
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<div class="breadcrumb__text">
-					<h2>Giỏ hàng</h2>
+					<h2>Sản phẩm yêu thích</h2>
 					<div class="breadcrumb__option">
-						<a href="/trang-chu">Trang chủ</a> <span>Giỏ hàng</span>
+						<a href="/trang-chu">Trang chủ</a> <span>Sản phẩm yêu thích</span>
 					</div>
 				</div>
 			</div>
@@ -77,32 +77,33 @@
 							<tr>
 								<th class="shoping__product">Sản phẩm</th>
 								<th>Giá</th>
-								<th>Số lượng</th>
-								<th>Thành tiền</th>
+								<th>Đánh giá</th>
+								<th></th>
 								<th></th>
 							</tr>
 						</thead>
 						<tbody>
-						
-							<c:forEach items="${cart.list}" var = "o">
+							<c:forEach items="${favour.list}" var="o">
 								<tr>
 									<td class="shoping__cart__item"><img
 										src="img/cart/sau-rieng-thai.webp" alt="">
 										<h5>${o.pro.name }</h5></td>
 									<td class="shoping__cart__price">${o.pro.price}đ</td>
 									<td class="shoping__cart__quantity">
-										<div class="quantity">
-											<div class="pro-qty">
-												<input type="text" value="${o.quantity}">
-											</div>
+										<div class="product__details__rating">
+											${o.pro.rate.getPoint()} <i class="fa fa-star"></i>
+
 										</div>
 									</td>
-									<td class="shoping__cart__total">${o.thanh_tien()}đ</td>
-									<td class="shoping__cart__item__close"><span
-										class="icon_close"></span></td>
+									
+									<td >
+									${o.pro.rate.listRate()} đánh giá 
+									<td class="shoping__cart__total"><a href=""> <i
+											class="fa fa-cart-plus"></i>
+									</a> <a href=""><i class="fa fa-close"></i> </a></td>
 								</tr>
+
 							</c:forEach>
-							
 						</tbody>
 					</table>
 				</div>
@@ -111,33 +112,14 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="shoping__cart__btns">
-					<a href="./shop-grid.html" class="primary-btn cart-btn">Tiếp
-						tục mua sắm</a> <a href="#"
+					<a href="danh-sach-san-pham" class="primary-btn cart-btn">Xem
+						thêm sản phẩm</a> <a href="danh-sach-yeu-thich"
 						class="primary-btn cart-btn cart-btn-right"><span
-						class="icon_loading"></span> Cập nhật lại giỏ</a>
+						class="icon_upload"></span> Cập nhật danh sách yêu thích</a>
 				</div>
 			</div>
-			<div class="col-lg-6">
-				<div class="shoping__continue">
-					<div class="shoping__discount">
-						<h5>Mã giảm giá</h5>
-						<form action="#">
-							<input type="text" placeholder="Nhập mã giảm giá của bạn">
-							<button type="submit" class="site-btn">Áp dụng mã</button>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="shoping__checkout">
-					<h5>Tổng tiền</h5>
-					<ul>
-						<li>Phụ thu <span>0đ</span></li>
-						<li>Tổng <span>${cart.tong_tien_gio()}đ</span></li>
-					</ul>
-					<a href="./checkout.html" class="primary-btn">Thanh Toán</a>
-				</div>
-			</div>
+
+
 		</div>
 	</div>
 	</section>

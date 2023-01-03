@@ -47,21 +47,29 @@
 						<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
 							class="fa fa-star"></i> <i class="fa fa-star"></i> <i
 							class="fa fa-star-half-o"></i> <span>${infor.rate.getPoint()}</span>
-						<span>(18 lượt đánh giá)</span>
+							<span>(${infor.rate.listRate()} lượt đánh giá)</span>
+
 					</div>
 					<div class="product__details__price">${infor.price }đ</div>
 					<p>${infor.pro_text}</p>
 					<div class="product__details__quantity">
-						<div class="quantity">
-							<div class="pro-qty">
-								<input type="text" value="1">
+						<form action="<c:url value='/gio-hang' />" method="get">
+							<div class="quantity">
+								<div class="pro-qty">
+
+									<input name="quantity" type="text" value="1">
+
+
+								</div>
+
 							</div>
-						</div>
+						</form>
 					</div>
-					<a href="cartProduct?pid=${infor.pro_id} "  class="primary-btn"
-						type="submit" value="go">Thêm vào giỏ hàng</a>						
-					<a href="<c:url value='/favorite' /> " class="heart-icon"><span
+					<a href="<c:url value='/gio-hang?proId=${infor.pro_id}' /> "
+						class="primary-btn" type="submit" value="go">Thêm vào giỏ hàng</a>
+					<a href="<c:url value='/yeu-thich?proId=${infor.pro_id}' /> " class="heart-icon"><span
 						class="icon_heart_alt"></span></a>
+
 					<ul>
 						<li><b>Xuất xứ:</b> <span>Việt Nam</span></li>
 
@@ -125,7 +133,7 @@
 					<div class="product__item">
 						<div class="product__item__pic set-bg"
 							data-setbg="img/product/product-1.jpg">
-							<a href="detail?pid=${i.pro_id }"><img
+							<a href="thong-tin-san-pham?pid=${i.pro_id }"><img
 								src="img/product/sau-rieng-thai.png"> </a>
 
 							<ul class="product__item__pic__hover">
@@ -134,7 +142,7 @@
 							</ul>
 
 						</div>
-						<a href="./infor-product.html">
+						<a href="thong-tin-san-pham?pid=${i.pro_id }">
 							<div class="product__item__text">
 								<h6>${i.name}</h6>
 								<p>

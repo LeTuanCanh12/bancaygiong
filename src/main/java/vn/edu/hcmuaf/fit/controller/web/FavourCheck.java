@@ -1,28 +1,23 @@
 package vn.edu.hcmuaf.fit.controller.web;
 
 import java.io.IOException;
-import java.util.List;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import vn.edu.hcmuaf.fit.dao.ListProductDao;
-import vn.edu.hcmuaf.fit.model.Product;
-
 /**
- * Servlet implementation class ProductInforController
+ * Servlet implementation class FavourCheck
  */
-@WebServlet("/thong-tin-san-pham")
-public class ProductInforController extends HttpServlet {
+@WebServlet("/danh-sach-yeu-thich")
+public class FavourCheck extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ProductInforController() {
+    public FavourCheck() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -32,28 +27,7 @@ public class ProductInforController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-	String id = request.getParameter("pid");
-	ListProductDao dao = new ListProductDao();
-	
-	Product pro = dao.inforProduct(id);
-	
-	ListProductDao daoList = new ListProductDao();
-	List<Product> list = daoList.getAllProduct();
-	
-	
-	request.setAttribute("infor", pro);
-	
-	request.setAttribute("productOther", list);
-	
-	request.getRequestDispatcher("/views/web/inforProduct.jsp").forward(request, response);
-
-	}
-	
-	
-	public static void main(String[] args) {
-		ListProductDao daoList = new ListProductDao();
-		List<Product> list = daoList.getAllProduct();
-		System.out.println(list);
+		request.getRequestDispatcher("/views/web/favour.jsp").forward(request, response);
 	}
 
 	/**

@@ -29,9 +29,9 @@
 
 	<!-- Content -->
 	<div class="container">
-		<section class="breadcrumb-section set-bg"
-			data-setbg="./../../template/web/img/breadcrumb.jpg"
-			style="background-image:  url(./../../template/web/img/breadcrumb.jpg)">
+			<section class="breadcrumb-section set-bg"
+		data-setbg="<c:url value='/template/web/img/breadcrumb.jpg'/>"
+		style="background-image: url(<c:url value='/template/web/img/breadcrumb.jpg'/>);">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
@@ -50,22 +50,22 @@
 				<h1 class="left_title">Liên hệ</h1>
 				<p class="des">Bạn hãy điền nội dung tin nhắn vào form dưới đây
 					và gửi cho chúng tôi. Chúng tôi sẽ trả lời bạn sau khi nhận được.</p>
-				<form id="submit_form">
+				<form id="submit_form" action="gui-lien-he">
 					<div class="form-group input">
-						<input type="text" class="form-control" id="name"
+						<input type="text" class="form-control" name="name"
 							placeholder="Tên của bạn...">
 					</div>
 					<div class="form-group input">
-						<input type="text" class="form-control" id="phone"
+						<input type="text" class="form-control" name="phone"
 							placeholder="Số điện thoại của bạn...">
 					</div>
 					<div class="form-group input">
-						<input type="text" class="form-control" id="email"
+						<input type="text" class="form-control" name="email"
 							placeholder="Email của bạn...">
 					</div>
 					<div class="form-group input">
 						<textarea class="form-control" name="note" rows="5" cols="20"
-							id="note" placeholder="Nội dung tin nhắn của bạn..."></textarea>
+							name="note" placeholder="Nội dung tin nhắn của bạn..."></textarea>
 					</div>
 					<button type="submit" id="" class="bnt_sumit">Gửi tin</button>
 				</form>

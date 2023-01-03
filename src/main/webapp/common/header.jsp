@@ -69,7 +69,7 @@
 				<ul>
 					<li ><a
 						href="<c:url value='/trang-chu'/>">Trang Chủ</a></li>
-					<li><a href="<c:url value='/list-product'/>">Sản Phẩm</a></li>
+					<li><a href="<c:url value='/danh-sach-san-pham'/>">Sản Phẩm</a></li>
 					<li><a href="#">Phân Loại</a>
 						<ul class="header__menu__dropdown">
 							<li><a href="<c:url value='/views/web/cayAnQua.jsp'/>">Cây ăn quả</a></li>
@@ -77,16 +77,16 @@
 									nghiệp</a></li>
 							<li><a href="<c:url value='/views/web/cayLayGo.jsp'/>">Cây lấy gỗ</a></li>
 						</ul></li>
-					<li><a href="<c:url value='/views/web/contact.jsp'/>">Liên hệ</a></li>
+					<li><a href="<c:url value='/lien-he'/>">Liên hệ</a></li>
 				</ul>
 				</nav>
 			</div>
 			<div class="col-lg-3">
 				<div class="header__cart">
 					<ul>
-						<li><a href="<c:url value='/views/web/contact.jsp'/>"><i class="fa fa-heart"></i> <span>1</span></a></li>
-						<li><a href="<c:url value='cartCheck'/>"><i class="fa fa-shopping-bag"></i>
-								<span>3</span></a></li>
+						<li><a href="<c:url value='danh-sach-yeu-thich'/>"><i class="fa fa-heart"></i> <span>${favour.tong_so_luong_sp()}</span></a></li>
+						<li><a href="<c:url value='gio-hang-cua-ban'/>"><i class="fa fa-shopping-bag"></i>
+								<span>${cart.tong_so_luong_sp()}</span></a></li>
 					</ul>
 					<div class="header__cart__price">
 						 <%-- item: <span>0.00</span>--%>
