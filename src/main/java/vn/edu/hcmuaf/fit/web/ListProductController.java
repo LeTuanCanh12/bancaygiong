@@ -21,19 +21,33 @@ public class ListProductController extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		RequestDispatcher rd = req.getRequestDispatcher("/views/web/listProduct.jsp");
-
 		ListProductDao dao = new ListProductDao();
-		List<Product> list = dao.getAllProduct();
-		List<Product> listSale = dao.getProductSales();
+		String indexPage = req.getParameter("indexPage");
+		if (indexPage == null)
+			indexPage = "1";
+		int index = Integer.parseInt(indexPage);
+		List<Product> listPaging = dao.paging(index);
+
+		int total = dao.getTotalProduct();
+		int endPage = total % 9 == 0 ? total / 9 : total / 9 + 1;
+
+		ListProductDao daoSale = new ListProductDao();
+		List<Product> listSale = daoSale.getProductSales();
+
+		req.setAttribute("listPro", listPaging);
 
 		req.setAttribute("listSale", listSale);
-		req.setAttribute("listPro", list);
+		req.setAttribute("endPage", endPage);
+		req.setAttribute("tag", index);
+
 
 		req.getRequestDispatcher("/views/web/listProduct.jsp");
 
 		rd.forward(req, resp);
 
 	}
+
+
 	
 
 //	public static void main(String[] args) {

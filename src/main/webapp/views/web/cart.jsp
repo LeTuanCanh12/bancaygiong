@@ -136,7 +136,7 @@
 						<li>Phụ thu <span>0đ</span></li>
 						<li>Tổng <span>${cart.tong_tien_gio()}đ</span></li>
 					</ul>
-					<a href="./checkout.html" class="primary-btn">Thanh Toán</a>
+					<a href="/thanh-toan" class="primary-btn">Thanh Toán</a>
 				</div>
 			</div>
 		</div>

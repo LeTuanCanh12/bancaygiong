@@ -3,11 +3,11 @@ const form = document.getElementById('form');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    checkInputs();
-});
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//
+//     checkInputs();
+// });
 function checkInputs() {
     
     const emailValue = email.value.trim();
@@ -49,7 +49,7 @@ function checkInputs() {
 
     }
     function isEmail(email) {
-        return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(email);
+        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
     }
     function isPassword(password) {
         return /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password);

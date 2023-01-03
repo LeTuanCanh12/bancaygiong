@@ -18,7 +18,9 @@ public class ListProductDao {
 
 	public List<Product> getAllProduct() {
 		List<Product> list = new ArrayList<>();
-		String query = 	"select  p.pro_id, p.name ,p.price, p.img, avg(r.point) as pro_point, p.quantity from product p join rating r on p.pro_id = r.pro_id  group by p.pro_id";
+		String query = 	"select  p.pro_id, p.name ,p.price, p.img, avg(r.point) " +
+				"as pro_point, p.quantity " +
+				"from product p join rating r on p.pro_id = r.pro_id  group by p.pro_id";
 		try {
 			conn = new DBContext().getConnection();
 			ps = conn.prepareStatement(query);
@@ -38,6 +40,48 @@ public class ListProductDao {
 		return list;
 
 	}
+	public int getTotalProduct() {
+		String query = "select count(pro_id) as total from product";
+		try {
+
+			conn = new DBContext().getConnection();
+			ps = conn.prepareStatement(query);
+			rs = ps.executeQuery();
+			rs.next();
+			int result = rs.getInt("total");
+			return result;
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return 0;
+	}
+
+	public List<Product> paging( int pageIndex){
+		List<Product> list = new ArrayList<>();
+		String query = "select  p.pro_id, p.name ,p.price, p.img, avg(r.point)  as pro_point, p.quantity \n" +
+				" from product p join rating r on p.pro_id = r.pro_id   group by p.pro_id limit ? , 9 ";
+		try {
+			conn = new DBContext().getConnection();
+			ps = conn.prepareStatement(query);
+			ps.setInt(1, (pageIndex-1)*3);
+			rs = ps.executeQuery();
+			while (rs.next()) {
+				Product pro = new Product();
+				pro.setPro_id(rs.getInt("pro_id"));
+				pro.setName(rs.getString("name"));
+				pro.setPrice(rs.getInt("price"));
+				pro.setImg(rs.getString("img"));
+				pro.setRate(new Rating(rs.getFloat("pro_point")));
+				list.add(pro);
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return list;
+	}
+
+
+
 
 	public List<Product> getProductSales() {
 		List<Product> list = new ArrayList<>();

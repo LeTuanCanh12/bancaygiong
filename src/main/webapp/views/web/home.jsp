@@ -58,12 +58,12 @@
 						<i class="fa fa-bars"></i> <span>Phân loại</span>
 					</div>
 					<ul>
-						<li><a href="<c:url value='/views/web/cayAnQua.jsp'/>">Cây
+						<li><a href="/cay-an-qua">Cây
 								ăn quả</a></li>
 
-						<li><a href="<c:url value='/views/web/cayCongNghiep.jsp'/>">Cây
+						<li><a href="/cay-cong-nghiep">Cây
 								công nghiệp</a></li>
-						<li><a href="<c:url value='/views/web/cayLayGo.jsp'/>">Cây
+						<li><a href="/cay-lay-go">Cây
 								lấy gỗ</a></li>
 
 					</ul>

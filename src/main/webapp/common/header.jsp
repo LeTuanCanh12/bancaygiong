@@ -25,7 +25,7 @@
 	type="text/css">
 <link rel="stylesheet"
 	href="<c:url value='/template/web/css/style.css' />" type="text/css">
-	
+
 <header>
 <div class="header__top">
 		<div class="container">
@@ -43,14 +43,21 @@
 				</div>
 				<div class="col-lg-6 col-md-6">
 					<div class="header__top__right">
-
-						<div class="header__top__right__auth">
-							<a href="<c:url value='/views/web/signup.jsp'/>"><i class="fa fa-user-plus"></i> Đăng
-								ký</a>
-						</div>
-						<div class="header__top__right__auth">
-							<a href="<c:url value='/views/web/login.jsp'/>"><i class="fa fa-user"></i> Đăng nhập</a>
-						</div>
+						<%--						<%! UserModel userModel = (UserModel) session.getAttribute("user"); %>--%>
+						<c:if test="${sessionScope.user != null}">
+							<div class="header__top__right__auth">
+								<a href="<c:url value='#'/>"><i class="fa fa-user"></i>Tài khoản</a>
+							</div>
+						</c:if>
+						<c:if test="${sessionScope.user == null}">
+							<div class="header__top__right__auth">
+								<a href="/dang-ky"><i class="fa fa-user-plus"></i> Đăng
+									ký</a>
+							</div>
+							<div class="header__top__right__auth">
+								<a href="dang-nhap"><i class="fa fa-user"></i> Đăng nhập</a>
+							</div>
+						</c:if>
 					</div>
 				</div>
 			</div>
@@ -60,7 +67,7 @@
 		<div class="row">
 			<div class="col-lg-3">
 				<div class="header__logo">
-					<a href="home.jsp"><img
+					<a href="/trang-chu"><img
 						src="<c:url value='/template/web/img/logo.png' />"></a>
 				</div>
 			</div>
@@ -72,10 +79,10 @@
 					<li><a href="<c:url value='/danh-sach-san-pham'/>">Sản Phẩm</a></li>
 					<li><a href="#">Phân Loại</a>
 						<ul class="header__menu__dropdown">
-							<li><a href="<c:url value='/views/web/cayAnQua.jsp'/>">Cây ăn quả</a></li>
-							<li><a href="<c:url value='/views/web/cayCongNghiep.jsp'/>">Cây công
+							<li><a href="/cay-an-qua">Cây ăn quả</a></li>
+							<li><a href="/cay-cong-nghiep">Cây công
 									nghiệp</a></li>
-							<li><a href="<c:url value='/views/web/cayLayGo.jsp'/>">Cây lấy gỗ</a></li>
+							<li><a href="/cay-lay-go">Cây lấy gỗ</a></li>
 						</ul></li>
 					<li><a href="<c:url value='/lien-he'/>">Liên hệ</a></li>
 				</ul>

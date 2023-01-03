@@ -181,10 +181,9 @@
 
 				</div>
 				<div class="product__pagination">
-					<a href="./shop-grid.html">1</a> <a href="./shop-grid-2.html">2</a>
-					<a href="./shop-grid-3.html">3</a> <a href="./shop-grid-4.html">4</a>
-					<a href="./shop-grid-5.html">5</a> <a href="./shop-grid-6.html">6</a>
-					<a href=""><i class="fa fa-long-arrow-right"></i></a>
+					<c:forEach begin="1" end="${endPage }" var="i">
+						<a href="list-product?indexPage=${i}" style="${tag==i?"background-color:green":""}">${i}</a>
+					</c:forEach>
 				</div>
 			</div>
 		</div>

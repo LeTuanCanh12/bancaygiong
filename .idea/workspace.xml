@@ -10,299 +10,214 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74da53fb-adfe-44da-96a8-b9d0d2f6d11a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/Connection/DBContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/dao/CartDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/dao/HomeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/dao/ListProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/model/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/model/CartProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/model/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/model/News.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/model/Rating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/model/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/AddToCartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/AddToFavour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/CartControllerCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/ContactController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/ContactLoadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/FavourCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/ListProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/ProductInforController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/SearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/common/taglib.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/paging/jquery.twbsPagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/paging/jquery.twbsPagination.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/.idea/libraries/Source.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/Source/OwlCarousel2-2.3.4.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/Source/SlickNav-master.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/Source/bootstrap-4.4.1-dist.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/Source/font-awesome-4.7.0.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/Source/jquery-nice-select-1.1.0.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/Source/jquery-ui-1.12.1.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/Source/sass.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/chinhsach/baomat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/chinhsach/daily.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/chinhsach/dichvu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/chinhsach/vanchuyen.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/css/contact.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/css/elegant-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/css/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/css/forgot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/css/jquery-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/css/nice-select.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/css/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/css/register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/css/slicknav.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/fonts/ElegantIcons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/fonts/ElegantIcons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/fonts/ElegantIcons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/fonts/ElegantIcons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/cay-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/cay-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/cay-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/cay-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/cay-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/cay-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/cay-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/cay-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/cay-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/huongdan/muahang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/huongdan/taotk.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/huongdan/thanhtoan.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/ba.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/banner/cachua.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/banner/cay_tao.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/blog/details/details-author.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/blog/details/details-hero.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/blog/details/details-pic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/blog/kythuattrongcay.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/blog/phattrien.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/blog/sauri.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/blog/sidebar/sr-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/blog/sidebar/sr-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/blog/sidebar/sr-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/breadcrumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/cart/hong-gion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/cart/na-nu-hoang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/cart/sau-rieng-thai.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/hero/banner2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/hero/img.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/Mit-khong-hat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/bang-dai-loan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/banglangtim.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/bo-sap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/buoi-da-xanh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/cam-c36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/che-day.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/chuoi-tay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/coc-thai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/dobau.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/doihat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/hong-gion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/na-nu-hoang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/oi-gion-it-hat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/sa-ke.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/sau-rieng-thai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/sau-rieng-thai.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/tao-xanh-nho.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/vu-sua-nu-hoang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/latest-product/xa-cu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/logo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/Mit-khong-hat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/Daudadat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/bo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/bosap.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/buoi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/buoidaxanh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/buoidtanlac.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/bơ034.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/camvinh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/cay-viet-quat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/caychay.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/caydâudadat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/caylenau.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/caylevang.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/caymaca.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/caynhot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/cayroi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/caytramden.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/cayvaithieu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/chanh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/chanhdaytimdl.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/chanhleo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/cherry.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/chomchomthai.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/chuoitaythai.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/dau.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/dua.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/hong.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/kiwi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/luu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/mamxoi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/mantamhoa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/mitmalaysia.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/na.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/oi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/quat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/sake.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/tao.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/taoxanh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/thanhlong.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/vslg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/anqua/vusuabohong.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/bang-dai-loan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/banglangtim.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/bo-sap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/buoi-da-xanh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/cam-c36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/che-day.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/chuoi-tay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/coc-thai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/ca-phe-che.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/ca-phe-mit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/ca-phe-voi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/cao-su-trung.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/che-day.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/che-ph1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/che-trong-doi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/dieu-do.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/dieu-vang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/dua-ma-lai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/dua-nuoc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/dua-tam-quang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/dua-xiem-do.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/dua-xiem-xanh-lun.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/tieu-lada.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/tieu-se-mo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/tieu-siralanka.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/tieu-trau.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/congnghiep/tieu-vinh-linh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/details/details-product-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/details/details-product-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/details/details-product-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/details/details-product-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/dobau.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/doihat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/hong-gion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/Omoi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/bachdan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/bachdanmo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/caycamlai.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/caydoi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/caygaovang.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/cayque.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/caysaoden.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/caysen.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/caysuado.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/caytrac.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/caytramhuong.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/cayxoan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/cayxoandao.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/danhuong.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/danhuongAD.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/daurai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/doihat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/gianghuong.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/gioixanh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/guhuon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/hoangdan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/keolai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/keolatram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/konie.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/lathoa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/lim.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/longnao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/metay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/munsung.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/taomeo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/tech.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/thongdo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/thongtre.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/tracden.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/laygo/tracdo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/luu-do-lun.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/man-do-bac.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/man-do-mien-nam.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/na-nu-hoang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/oi-gion-it-hat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/sa-ke.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/sau-rieng-thai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/tao-xanh-lon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/tao-xanh-nho.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/vu-sua-nu-hoang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/product/xa-cu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/sales.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/img/user/review-avt.jfif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/js/al.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/js/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/js/jquery.nice-select.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/js/jquery.slicknav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/js/mixitup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/js/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/js/register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_blog-details.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_blog-sidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_blog.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_checkout.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_contact.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_hero.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_home-page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_responsive.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_shop-details.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_shop-grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_shoping-cart.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_sidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/_variable.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/sass/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/new/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/new/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/web/cart.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/web/cayAnQua.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/web/contact.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/web/favour.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/web/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/web/inforProduct.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/web/listProduct.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/web/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/admin/CustomController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/admin/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/admin/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/admin/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/controller/web/ContactController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/dao/CategoryDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/dao/ContactDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/dao/LoginDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/dao/TransactionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/filter/AuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/CayAnQuaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/CayCongNghiepController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/CayLayGoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/CheckOutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/LoginControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/RegisterControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/css/util.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/form-add-don-hang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/form-add-san-pham.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/images/customerApp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/images/fg-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/images/hay.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/images/team.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-anhthe/1.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-anhthe/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-anhthe/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-anhthe/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-anhthe/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-anhthe/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-anhthe/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-sanpham/banan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-sanpham/cera.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-sanpham/dolas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-sanpham/ghethera.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-sanpham/jimmy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-sanpham/kara.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-sanpham/lucy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-sanpham/matda.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-sanpham/reno.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-sanpham/tare.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-sanpham/theresa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-sanpham/thomas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-sanpham/tu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-sanpham/vegas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-sanpham/vita.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/img-sanpham/zuno.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/plugins/bootstrap-datepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/plugins/bootstrap-notify.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/plugins/chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/plugins/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/plugins/fullcalendar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/plugins/jquery-ui.custom.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/plugins/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/plugins/jquery.vmap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/plugins/jquery.vmap.sampledata.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/plugins/jquery.vmap.world.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/plugins/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/plugins/pace.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/plugins/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/plugins/sweetalert.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/quan-ly-bao-cao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/table-data-oder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/table-data-product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/doc/table-data-table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/forgot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/images/customerApp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/images/fg-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/images/hay.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/images/team.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/img-sanpham/banan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/img-sanpham/cera.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/img-sanpham/dolas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/img-sanpham/ghethera.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/img-sanpham/jimmy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/img-sanpham/kara.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/img-sanpham/lucy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/img-sanpham/matda.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/img-sanpham/reno.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/img-sanpham/tare.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/img-sanpham/theresa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/img-sanpham/thomas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/img-sanpham/tu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/img-sanpham/vegas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/img-sanpham/vita.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/img-sanpham/zuno.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/js/footable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/tesf.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/text.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/animate/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/bootstrap/js/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/bootstrap/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/bootstrap/js/tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/css-hamburgers/hamburgers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/css-hamburgers/hamburgers.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/jquery/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/select2/select2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/select2/select2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/select2/select2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/admin/vendor/select2/select2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/cay-10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/caycn1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/caycn10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/caycn2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/caycn3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/caycn4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/caycn5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/caycn6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/caycn7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/caycn8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/caycn9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/caylg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/caylg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/caylg4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/caylg5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/caylg6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/caylg7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/template/web/hinhanh/caylg8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/custom.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/homeData.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/product.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/web/cayCongNghiep.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/web/cayLayGo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/web/checkOut.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/views/web/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/dao/ListProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/dao/ListProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/model/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/ContactController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/ListProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/edu/hcmuaf/fit/web/ListProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/common/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/common/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/web/js/al.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/web/js/al.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/web/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/web/js/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/new/edit.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/new/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/web/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/web/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/web/cayAnQua.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/web/cayAnQua.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/web/contact.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/web/contact.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/web/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/web/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/web/listProduct.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/web/listProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/web/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,33 +245,39 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectId" id="2JndmZKr2aLnFRxSPkn5es6VWAA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/bancaygiong_CK/src/main/webapp/template/web/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.applicationServers&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/bancaygiong_CK/src/main/webapp/template/web/hinhanh",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.applicationServers"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\bancaygiong_CK\src\main\webapp\template\web\images" />
-      <recent name="D:\bancaygiong_CK\src\main\java\vn\edu\hcmuaf\fit" />
-      <recent name="D:\bancaygiong_CK\src\main\java\vn\edu\hcmuaf\fit\controller\web" />
-      <recent name="D:\bancaygiong_CK\src\main\webapp" />
-      <recent name="D:\bancaygiong_CK\src\main\java" />
+      <recent name="D:\bancaygiong_CK\src\main\webapp\template\web\hinhanh" />
+      <recent name="D:\bancaygiong_CK\src\main\webapp\views\web" />
+      <recent name="D:\bancaygiong_CK\src\main\java\vn\edu\hcmuaf\fit\dao" />
+      <recent name="D:\bancaygiong_CK\src\main\java\vn\edu\hcmuaf\fit\model" />
+      <recent name="D:\bancaygiong_CK\src\main\java\vn\edu\hcmuaf\fit\web" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\bancaygiong_CK\src\main\java\vn\edu\hcmuaf\fit\web" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.70">
@@ -373,26 +294,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListProductDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="vn.edu.hcmuaf.fit.dao.ListProductDao" />
-      <module name="bancaygiong_CK" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="vn.edu.hcmuaf.fit.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="header.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8088/views/admin/header.jsp">
+      <method v="2" />
+    </configuration>
+    <configuration name="home.jsp (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8088/views/admin/home.jsp">
+      <method v="2" />
     </configuration>
     <configuration name="home.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8088/views/web/home.jsp">
       <method v="2" />
     </configuration>
-    <configuration name="inforProduct.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8088/views/web/inforProduct.jsp">
-      <method v="2" />
-    </configuration>
-    <configuration name="listProduct.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8088/views/web/listProduct.jsp">
+    <configuration name="register.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8088/views/web/register.jsp">
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 9.0.70" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.70" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -487,19 +398,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ContactController" />
-      <item itemvalue="Application.ListProductDao" />
-      <item itemvalue="JavaScript Debug.listProduct.jsp" />
+      <item itemvalue="JavaScript Debug.header.jsp" />
+      <item itemvalue="JavaScript Debug.home.jsp (1)" />
+      <item itemvalue="JavaScript Debug.register.jsp" />
       <item itemvalue="JavaScript Debug.home.jsp" />
-      <item itemvalue="JavaScript Debug.inforProduct.jsp" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.70" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.home.jsp" />
-        <item itemvalue="JavaScript Debug.listProduct.jsp" />
+        <item itemvalue="JavaScript Debug.register.jsp" />
         <item itemvalue="Application.ContactController" />
-        <item itemvalue="Application.ListProductDao" />
-        <item itemvalue="JavaScript Debug.inforProduct.jsp" />
+        <item itemvalue="JavaScript Debug.header.jsp" />
+        <item itemvalue="JavaScript Debug.home.jsp (1)" />
+        <item itemvalue="JavaScript Debug.home.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -514,7 +425,8 @@
       <workItem from="1672717949583" duration="12309000" />
       <workItem from="1672735106895" duration="708000" />
       <workItem from="1672735859187" duration="4774000" />
-      <workItem from="1672741062029" duration="2660000" />
+      <workItem from="1672741062029" duration="29421000" />
+      <workItem from="1672778186427" duration="4597000" />
     </task>
     <servers />
   </component>
