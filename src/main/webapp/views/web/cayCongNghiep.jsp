@@ -61,7 +61,7 @@
 		<div class="row" style="">
 			<div class="col-lg-12 text-center">
 				<div class="breadcrumb__text">
-					<h2>Sản phẩm</h2>
+					<h2>Cây Công Nghiệp</h2>
 					<div class="breadcrumb__option">
 						<a href="<c:url value='/trang-chu' /> ">Trang chủ</a> <span>Sản
 							phẩm</span>
@@ -118,10 +118,7 @@
 								<a href="thong-tin-san-pham?pid=${i.pro_id}">
 									<div class="product__item__text">
 										<h6>${i.name}</h6>
-										<p>
-											${i.rate.getPoint()} <i class="fa fa-star"
-												style="color: #ffA200"></i>
-										</p>
+										
 										<h5>${i.price}đ</h5>
 									</div>
 								</a>
