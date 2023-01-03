@@ -98,7 +98,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<c:forEach items="${cayAnqua}" var="i">
+					<c:forEach items="${cayAnQua}" var="i">
 						<div class="col-lg-4 col-md-6 col-sm-6">
 
 							<div class="product__item">
@@ -108,10 +108,8 @@
 										src="img/product/sau-rieng-thai.png"> </a>
 
 									<ul class="product__item__pic__hover">
-										<li><a href="yeu-thich?proId=${i.pro_id}"><i
-												class="fa fa-heart"></i></a></li>
-										<li><a href="gio-hang?proId=${o.pro_id}"><i
-												class="fa fa-shopping-cart"></i></a></li>
+										<li><a href="yeu-thich?proId=${i.pro_id}"><i class="fa fa-heart"></i></a></li>
+										<li><a href="gio-hang?proId=${i.pro_id}"><i class="fa fa-shopping-cart"></i></a></li>
 									</ul>
 
 								</div>
@@ -128,6 +126,8 @@
 							</div>
 						</div>
 					</c:forEach>
+
+
 				</div>
 				<div class="product__pagination">
 					<c:forEach begin="1" end="${endPage }" var="i">
