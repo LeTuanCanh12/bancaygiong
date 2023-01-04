@@ -14,7 +14,7 @@
 </head>
 <body>
 <%@include file="header.jsp"%>
-
+<body onload="time()" class="app sidebar-mini rtl"></body>
 <main class="app-content">
     <div class="app-title">
         <ul class="app-breadcrumb breadcrumb side">
@@ -42,9 +42,9 @@
                             <th width="10"><input type="checkbox" id="all"></th>
                             <th>ID</th>
                             <th width="150">Tên</th>
-                            <th width="300">Mật khẩu</th>
+                            <th width="300">SĐT</th>
                             <th>Email</th>
-                            <th>Ngày Tạo</th>
+                            <th>Quyền hạn</th>
                             <th width="100">Tính năng</th>
                         </tr>
 
@@ -55,9 +55,9 @@
                             <td width="10"><input type="checkbox" name="check1" value="1"></td>
                             <td>${o.user_id}</td>
                             <td>${o.first_name}</td>
-                            <td>${o.password} </td>
+                            <td>${o.phone} </td>
                             <td>${o.mail}</td>
-                            <td>${o.create_date}</td>
+                            <td>${o.authorities}</td>
                             <td class="table-td-center"><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"
                                                                 onclick="myFunction(this)"><i class="fas fa-trash-alt"></i>
                             </button>
@@ -67,107 +67,9 @@
                             </td>
                         </tr>
                             </c:forEach>
-                        <tr>
-                            <td width="10"><input type="checkbox" name="check2" value="2"></td>
-                            <td>#SX22837</td>
-                            <td>Trần Khả Ái</td>
-                            <td>6 Nguyễn Lương Bằng, Tân Phú, Quận 7, Hồ Chí Minh</td>
-                            <td>22/12/1999</td>
 
-                            <td>0931342432</td>
-                            <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa"
-                                        onclick="myFunction(this)"><i class="fas fa-trash-alt"></i>
-                            </button>
-                                <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp"
-                                        data-toggle="modal" data-target="#ModalUP"><i class="fas fa-edit"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10"><input type="checkbox" name="check3" value="3"></td>
-                            <td>#LO2871</td>
-                            <td>Phạm Thu Cúc</td>
-                            <td>Số 3 Hòa Bình, Phường 3, Quận 11, Hồ Chí Minh </td>
-                            <td>02/06/1998</td>
 
-                            <td>0931491997</td>
 
-                            <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa" onclick="myFunction()"><i
-                                    class="fas fa-trash-alt"></i>
-                            </button>
-                                <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp"
-                                        data-toggle="modal" data-target="#ModalUP"><i class="fas fa-edit"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10"><input type="checkbox"></td>
-                            <td>#SR28746</td>
-                            <td>Trần Anh Khoa</td>
-                            <td>19 Đường Nguyễn Hữu Thọ, Tân Hưng, Quận 7, Hồ Chí Minh </td>
-                            <td>18/02/1995</td>
-
-                            <td>0916706633</td>
-
-                            <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa" onclick="myFunction()"><i
-                                    class="fas fa-trash-alt"></i>
-                            </button>
-                                <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp"
-                                        data-toggle="modal" data-target="#ModalUP"><i class="fas fa-edit"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10"><input type="checkbox"></td>
-                            <td>#KJS276</td>
-                            <td>Nguyễn Thành Nhân</td>
-                            <td>Số 13, Tân Thuận Đông, Quận 7, Hồ Chí Minh </td>
-                            <td>10/03/1996</td>
-
-                            <td>0971038066</td>
-
-                            <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa" onclick="myFunction()"><i
-                                    class="fas fa-trash-alt"></i>
-                            </button>
-                                <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp"
-                                        data-toggle="modal" data-target="#ModalUP"><i class="fas fa-edit"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10"><input type="checkbox"></td>
-                            <td>#BS76228</td>
-                            <td>Nguyễn Đặng Trọng Nhân</td>
-                            <td>59C Nguyễn Đình Chiểu, Quận 3, Hồ Chí Minh </td>
-                            <td>23/07/1996</td>
-
-                            <td>0846881155</td>
-
-                            <td><button class="btn btn-primary btn-sm trash" type="button" title="Xóa" onclick="myFunction()"><i
-                                    class="fas fa-trash-alt"></i>
-                            </button>
-                                <button class="btn btn-primary btn-sm edit" type="button" title="Sửa" id="show-emp"
-                                        data-toggle="modal" data-target="#ModalUP"><i class="fas fa-edit"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="10"><input type="checkbox"></td>
-                            <td>#YUI21376</td>
-                            <td>Nguyễn Thị Mai</td>
-                            <td>Đường Số 3, Tân Tạo A, Bình Tân, Hồ Chí Minh</td>
-                            <td>09/12/2000</td>
-
-                            <td>0836333037</td>
-
-                            <td><button class="btn btn-primary btn-sm trash" title="Xóa" onclick="myFunction()"><i
-                                    class="fas fa-trash-alt"></i>
-                            </button>
-                                <button class="btn btn-primary btn-sm edit" title="Sửa" id="show-emp" data-toggle="modal"
-                                        data-target="#ModalUP"><i class="fas fa-edit"></i>
-                                </button>
-                            </td>
-                        </tr>
 
                         </tbody>
                     </table>

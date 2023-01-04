@@ -25,7 +25,7 @@ public class UserDao {
             rs = ps.executeQuery();
             while (rs.next()) {
                 UserModel pro = new UserModel();
-                pro.setUser_id(rs.getInt("pro_id"));
+                pro.setUser_id(rs.getInt("user_id"));
                 pro.setPassword(rs.getString(2));
                 pro.setFirst_name(rs.getString(3));
                 pro.setLast_name(rs.getString(4));

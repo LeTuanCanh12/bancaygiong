@@ -30,6 +30,7 @@ public class ListProductDao {
 				pro.setPro_id(rs.getInt("pro_id"));
 				pro.setName(rs.getString("name"));
 				pro.setPrice(rs.getInt("price"));
+				pro.setQuantity(rs.getInt("quantity"));
 				pro.setImg(rs.getString("img"));
 				pro.setRate(new Rating(rs.getFloat("pro_point")));
 				list.add(pro);

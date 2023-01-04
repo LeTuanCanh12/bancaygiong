@@ -27,6 +27,16 @@
 	href="<c:url value='/template/web/css/style.css' />" type="text/css">
 
 <header>
+	<style>
+
+		.logout{
+			color: #7fad39;
+		}
+
+		.logout:hover {
+			color: #007bff;
+		}
+	</style>
 <div class="header__top">
 		<div class="container">
 			<div class="row">
@@ -48,6 +58,7 @@
 							<div class="header__top__right__auth">
 								<a href="<c:url value='#'/>"><i class="fa fa-user"></i>Tài khoản</a>
 							</div>
+							<a href="/dang-xuat" class="logout">Đăng xuất</a>
 						</c:if>
 						<c:if test="${sessionScope.user == null}">
 							<div class="header__top__right__auth">

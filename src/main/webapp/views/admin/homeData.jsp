@@ -34,7 +34,7 @@
           <div class="widget-small primary coloured-icon"><i class='icon bx bxs-user-account fa-3x'></i>
             <div class="info">
               <h4>Tổng khách hàng</h4>
-              <p><b>${custom.size()}khách hàng</b></p>
+              <p><b>${custom.size()} khách hàng</b></p>
               <p class="info-tong">Tổng số khách hàng được quản lý.</p>
             </div>
           </div>
@@ -54,7 +54,7 @@
           <div class="widget-small warning coloured-icon"><i class='icon bx bxs-shopping-bags fa-3x'></i>
             <div class="info">
               <h4>Tổng đơn hàng</h4>
-              <p><b>247 đơn hàng</b></p>
+              <p><b>0 đơn hàng</b></p>
               <p class="info-tong">Tổng số hóa đơn bán hàng trong tháng.</p>
             </div>
           </div>
@@ -64,7 +64,7 @@
           <div class="widget-small danger coloured-icon"><i class='icon bx bxs-error-alt fa-3x'></i>
             <div class="info">
               <h4>Sắp hết hàng</h4>
-              <p><b>${listPro.size()}</b></p>
+              <p><b>0</b></p>
               <p class="info-tong">Số sản phẩm cảnh báo hết cần nhập thêm.</p>
             </div>
           </div>
@@ -76,56 +76,26 @@
             <div>
               <table class="table table-hover">
                 <thead>
+
                 <tr>
                   <th>ID</th>
                   <th>Tên khách hàng</th>
                   <th>Ngày đăng kí</th>
                   <th>Số điện thoại</th>
                 </tr>
+
                 </thead>
                 <tbody>
+                <c:forEach items="${custom}" var="o">
                 <tr>
-                  <td>#183</td>
-                  <td>Trần Quang Tuệ</td>
-                  <td>22/11/2022</td>
-                  <td><span class="tag tag-success">0921387221</span></td>
+                  <td>${o.user_id}</td>
+                  <td>${o.first_name}</td>
+                  <td>${o.create_date}</td>
+                  <td><span class="tag tag-success">${o.phone}</span></td>
+
                 </tr>
-                <tr>
-                  <td>#219</td>
-                  <td>Giang Viên Minh</td>
-                  <td>22/11/2022</td>
-                  <td><span class="tag tag-warning">0912376352</span></td>
-                </tr>
-                <tr>
-                  <td>#627</td>
-                  <td>Lạc Hoa Âm</td>
-                  <td>22/11/2022</td>
-                  <td><span class="tag tag-primary">01287326654</span></td>
-                </tr>
-                <tr>
-                  <td>#175</td>
-                  <td>Tịch Ứng Tình</td>
-                  <td>22/11/2022</td>
-                  <td><span class="tag tag-danger">0912376763</span></td>
-                </tr>
-                <tr>
-                  <td>#183</td>
-                  <td>Cận Đông Lưu</td>
-                  <td>22/11/2022</td>
-                  <td><span class="tag tag-success">0921387221</span></td>
-                </tr>
-                <tr>
-                  <td>#219</td>
-                  <td>Quân Mộng Ưu</td>
-                  <td>21/11/2022</td>
-                  <td><span class="tag tag-warning">0912376352</span></td>
-                </tr>
-                <tr>
-                  <td>#627</td>
-                  <td>Giải Ngữ Hoa</td>
-                  <td>21/11/2022</td>
-                  <td><span class="tag tag-primary">01287326654</span></td>
-                </tr>
+                </c:forEach>
+
                 </tbody>
               </table>
             </div>
